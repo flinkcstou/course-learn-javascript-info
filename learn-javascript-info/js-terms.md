@@ -31,3 +31,4 @@
 - Observer pattern - Observer pattern
 - Всплытие поднятие - hoisting
 - заимствование метода = method borrowing
+- Прототипное наследование - prototypal inheritance
