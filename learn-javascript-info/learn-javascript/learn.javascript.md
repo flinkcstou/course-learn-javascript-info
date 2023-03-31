@@ -1528,7 +1528,7 @@ how to clone object with descriptor
 
 ### Встроенные прототипы
 
-![img.png](assets/nativa-prototypes.png)
+![img.png](../assets/native-prototypes.png)
 
       /*
     *
