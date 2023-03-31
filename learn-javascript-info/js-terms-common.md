@@ -1,0 +1,3 @@
+- зарезервированные - reserved
+- терминология - terminology
+- словарный запас - vocabulary 
