@@ -3,7 +3,56 @@ export class ClassInheritance {
   constructor() {
 
     // this.method1();
-    this.method2();
+    // this.method2();
+    // this.method3();
+    this.method4();
+  }
+
+  method4() {
+
+
+    // @ts-ignore
+    class Rabbit extends Array {
+
+      constructor() {
+        super();
+        // @ts-ignore
+        console.error(this.length);
+      }
+    }
+
+    new Rabbit();
+
+  }
+
+  method3() {
+    class Animal {
+      name = 'animal';
+
+      getName() {
+        console.error(this.name);
+      }
+
+      constructor() {
+        this.getName();
+      }
+    }
+
+    class Rabbit extends Animal {
+      override name = 'rabbit';
+
+      override getName() {
+        console.error(this.name);
+      }
+
+      constructor() {
+        super();
+      }
+    }
+
+    new Animal(); // animal
+    new Rabbit(); // animal
+
   }
 
   method2() {
