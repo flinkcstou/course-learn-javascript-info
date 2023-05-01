@@ -10,3 +10,6 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#creating_new_objects
 
 Написать все способы реализации свойств возможностей new Function и также сравнить вместе с Class-ом
+
+нужно привести в порядок проект
+refactor it all folder and file
