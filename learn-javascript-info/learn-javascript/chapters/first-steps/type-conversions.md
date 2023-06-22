@@ -1,4 +1,4 @@
-### Преобразование типов(Type conversations)
+### Преобразование типов(Type conversions)
 
 https://learn.javascript.ru/type-conversions
 
