@@ -41,7 +41,7 @@ value primitive convert to string used:
           
           alert(countMessage) // "5"
 
-> значения `undefined`, `null` когда преобразуем в `string` становится строчным значением `"null" "undefined"`.
+> значения `undefined`, `null`, 'false' когда преобразуем в `string` становится строчным значением `"null" "undefined" "false"`.
 
 
 **Численное преобразование (Numeric Conversion)**
@@ -101,8 +101,8 @@ value primitive convert to number used:
 value primitive convert to boolean used:
 
 - Boolean(value)
-- !value
-- результаты сравнения
+- !value (unary operator **not**)
+- результаты сравнения, именно результаты сравнения, а не сам процесс сравнения
 
         Boolean(1) // true
         Boolean(0) // false
