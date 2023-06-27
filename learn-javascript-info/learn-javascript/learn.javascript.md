@@ -1,13 +1,23 @@
-### Циклы while и for
+### Основы JavaScript(JavaScript Fundamentals)
 
-отличие идет в переменных, как было сказано ранее `let` живет только внутри блока
-
-        for(){
-        let message= 'message'
-        var varMessage ='varMesssage'
-        } 
-        message // undefined
-        varMessage // 'varMessage
+- Hello, world! [hello-world](chapters/first-steps/hello-world.md)
+- Code structure [structure](chapters/first-steps/structure.md)
+- The modern mode, "use strict" [](chapters/first-steps/)
+- Variables [variables](chapters/first-steps/variables.md)
+- Data types [](chapters/first-steps/)
+- Interaction: alert, prompt, confirm [](chapters/first-steps/)
+- Type Conversions [](chapters/first-steps/)
+- Basic operators, maths [](chapters/first-steps/)
+- Comparisons [](chapters/first-steps/)
+- Conditional branching: if, '?' [](chapters/first-steps/)
+- Logical operators [](chapters/first-steps/)
+- Nullish coalescing operator '??' [](chapters/first-steps/)
+- Loops: while and for [](chapters/first-steps/)
+- The "switch" statement [](chapters/first-steps/)
+- Functions [](chapters/first-steps/)
+- Function expressions [](chapters/first-steps/)
+- Arrow functions, the basics [](chapters/first-steps/)
+- JavaScript specials [](chapters/first-steps/)
 
 ### Функции
 
