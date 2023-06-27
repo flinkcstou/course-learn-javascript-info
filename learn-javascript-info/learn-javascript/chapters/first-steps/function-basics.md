@@ -1,5 +1,7 @@
 ### Функции(Functions)
 
+https://learn.javascript.ru/function-basics
+
 - `terminalogy`
     - Локальные переменные - local variable
     - Внешние переменные - outer variable

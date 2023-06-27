@@ -1,5 +1,7 @@
 ### Конструкция "switch"(The "switch" statement)
 
+https://learn.javascript.ru/switch
+
 - `terminalogy`
 
 

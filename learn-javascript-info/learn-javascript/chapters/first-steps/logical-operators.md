@@ -1,5 +1,7 @@
 ### Логические операторы(Logical operators)
 
+https://learn.javascript.ru/logical-operators
+
 - `terminalogy`
 
 > В JavaScript есть четыре логических

@@ -1,5 +1,7 @@
 ### Типы данных(Data types)
 
+https://learn.javascript.ru/types
+
 - `terminalogy`
     - типы данных - data types
     - кавычки - quotes

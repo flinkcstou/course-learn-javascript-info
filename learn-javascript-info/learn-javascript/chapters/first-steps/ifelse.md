@@ -1,5 +1,7 @@
 ### Условное ветвление: if, '?'(Conditional branching: if, '?')
 
+https://learn.javascript.ru/ifelse
+
 - `terminalogy`
 
 **conditional operators**

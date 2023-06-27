@@ -1,5 +1,7 @@
 ### Оператор нулевого слияния (??)(Nullish coalescing operator '??')
 
+https://learn.javascript.ru/nullish-coalescing-operator
+
 **?? (нулевое слияние)(nullish-coalescing**
 
 - `??` возвращает первое определённое значение.

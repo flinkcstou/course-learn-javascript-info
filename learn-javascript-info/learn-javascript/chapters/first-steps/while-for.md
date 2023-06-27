@@ -1,5 +1,7 @@
 ### Циклы while и for(Loops: while and for)
 
+https://learn.javascript.ru/while-for
+
 **syntax**
 
 - while

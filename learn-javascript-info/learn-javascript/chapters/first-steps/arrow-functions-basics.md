@@ -1,5 +1,7 @@
 ### Стрелочные функции, основы(Arrow functions, the basics)
 
+https://learn.javascript.ru/arrow-functions-basics
+
 - `terminalogy`
     - стрелочные функции - arrow functions
 

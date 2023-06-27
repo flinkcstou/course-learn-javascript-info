@@ -1,5 +1,7 @@
 ### Базовые операторы, математика(Basic operators, maths)
 
+https://learn.javascript.ru/operators
+
 - `terminalogy`
     - унарный - unary - одинарный
     - бинарный - binary -двойной

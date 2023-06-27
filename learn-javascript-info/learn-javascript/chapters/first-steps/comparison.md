@@ -1,5 +1,7 @@
 ### Операторы сравнения(Comparisons operators)
 
+https://learn.javascript.ru/comparison
+
 - `terminalogy`
 
 **comparisons operators**

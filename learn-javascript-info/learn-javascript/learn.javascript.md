@@ -1,56 +1,34 @@
 ### Основы JavaScript(JavaScript Fundamentals)
 
-- Hello, world! [hello-world](chapters/first-steps/hello-world.md)
-- Code structure [structure](chapters/first-steps/structure.md)
-- The modern mode, "use strict" [](chapters/first-steps/)
-- Variables [variables](chapters/first-steps/variables.md)
-- Data types [types](chapters/first-steps/types.md)
-- Interaction: alert, prompt, confirm [](chapters/first-steps/)
-- Type Conversions [type-conversions](chapters/first-steps/type-conversions.md)
-- Basic operators, maths [operators](chapters/first-steps/operators.md)
-- Comparisons [comparison](chapters/first-steps/comparison.md)
-- Conditional branching: if, '?' [ifelse](chapters/first-steps/ifelse.md)
-- Logical operators [logical-operators](chapters/first-steps/logical-operators.md)
-- Nullish coalescing operator '??' [nullish-coalescing-operator](chapters/first-steps/nullish-coalescing-operator.md)
-- Loops: while and for [while-for](chapters/first-steps/while-for.md)
-- The "switch" statement [switch](chapters/first-steps/switch.md)
-- Functions [function-basics](chapters/first-steps/function-basics.md)
-- Function expressions [function-expressions](chapters/first-steps/function-expressions.md)
-- Arrow functions, the basics [arrow-functions-basics](chapters/first-steps/arrow-functions-basics.md)
-- JavaScript specials [javascript-specials](chapters/first-steps/javascript-specials.md)
+- Привет, мир! - Hello, world! [hello-world](chapters/first-steps/hello-world.md)
+- Структура кода - Code structure [structure](chapters/first-steps/structure.md)
+- Строгий режим — "use strict" - The modern mode, "use strict" [](chapters/first-steps/)
+- Переменные - Variables [variables](chapters/first-steps/variables.md)
+- Типы данных - Data types [types](chapters/first-steps/types.md)
+- Взаимодействие: alert, prompt, confirm - Interaction: alert, prompt, confirm [](chapters/first-steps/)
+- Преобразование типов - Type Conversions [type-conversions](chapters/first-steps/type-conversions.md)
+- Базовые операторы, математика - Basic operators, maths [operators](chapters/first-steps/operators.md)
+- Операторы сравнения - Comparisons [comparison](chapters/first-steps/comparison.md)
+- Условное ветвление: if, '?' - Conditional branching: if, '?' [ifelse](chapters/first-steps/ifelse.md)
+- Логические операторы - Logical operators [logical-operators](chapters/first-steps/logical-operators.md)
+- Оператор нулевого слияния (??) - Nullish coalescing operator '
+  ??' [nullish-coalescing-operator](chapters/first-steps/nullish-coalescing-operator.md)
+- Циклы while и for - Loops: while and for [while-for](chapters/first-steps/while-for.md)
+- Конструкция "switch" - The "switch" statement [switch](chapters/first-steps/switch.md)
+- Функции - Functions [function-basics](chapters/first-steps/function-basics.md)
+- Function Expression - Function expressions [function-expressions](chapters/first-steps/function-expressions.md)
+- Стрелочные функции, основы - Arrow functions, the
+  basics [arrow-functions-basics](chapters/first-steps/arrow-functions-basics.md)
+- Особенности JavaScript - JavaScript specials [javascript-specials](chapters/first-steps/javascript-specials.md)
 
-### Полифилы(перевод)
+### Качество кода(Code quality)
 
-Babel – это транспилер(перевод). Он переписывает современный JavaScript-код в предыдущий стандарт.
-
-core js - это полифил(перевод)
-
-Транспайлер - переписывает новый синтаксис языка в старый.
-Например:
-
-    // объявление переменных в новом стиле
-    const a = `константа`;
-    let b = `изменяемая переменная`;
-
-    // приводит к объявлению в старом стиле
-    var a = `константа`;
-    var b = `изменяемая переменная`;
-
-Полифилл - реализовывает функции из новой версии языка, которых нет в старой
-Например:
-
-    // проверка является ли arr массивом в новом варианте
-    if (Array.isArray(arr) === true) alert('массив!');
-    
-    // проверка является ли arr массивом в старом варианте
-    
-    // Полифилл функции из "новой" версии для старой "версии" языка
-    // (для примера здесь, пропишем прямо в прототип Array)
-    Array.__proto__.isArray = function(value) {
-    return value instanceof Array;
-    };
-    
-    if (Array.isArray(arr) === true) alert('массив!');
+- Отладка в браузере - Debugging in the browser [](chapters/code-quality)
+- Советы по стилю кода - Coding Style [](chapters/code-quality)
+- Комментарии - Comments [](chapters/code-quality)
+- Ниндзя-код - Ninja code [](chapters/code-quality)
+- Автоматическое тестирование c использованием фреймворка Mocha - Automated testing with Mocha [](chapters/code-quality)
+- Полифилы - Polyfills and transpilers  [polyfills](chapters/code-quality/polyfills.md)
 
 ### Объекты
 
