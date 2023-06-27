@@ -4,61 +4,20 @@
 - Code structure [structure](chapters/first-steps/structure.md)
 - The modern mode, "use strict" [](chapters/first-steps/)
 - Variables [variables](chapters/first-steps/variables.md)
-- Data types [](chapters/first-steps/)
+- Data types [types](chapters/first-steps/types.md)
 - Interaction: alert, prompt, confirm [](chapters/first-steps/)
-- Type Conversions [](chapters/first-steps/)
-- Basic operators, maths [](chapters/first-steps/)
-- Comparisons [](chapters/first-steps/)
-- Conditional branching: if, '?' [](chapters/first-steps/)
-- Logical operators [](chapters/first-steps/)
-- Nullish coalescing operator '??' [](chapters/first-steps/)
-- Loops: while and for [](chapters/first-steps/)
-- The "switch" statement [](chapters/first-steps/)
-- Functions [](chapters/first-steps/)
-- Function expressions [](chapters/first-steps/)
-- Arrow functions, the basics [](chapters/first-steps/)
-- JavaScript specials [](chapters/first-steps/)
-
-### Функции
-
-        function имя(параметры) {
-          ...тело...
-        }(перевод)
-
-### Function Expression
-
-Function Declaration (Объявление Функции):
-
-        function sayHi() {
-          alert( "Привет" );
-        }
-
-Function Expression (Функциональное Выражение).
-
-        let sayHi = function() {
-          alert( "Привет" );
-        };
-
-«стрелочные функции» (arrow functions),
-
-        let func = (arg1, arg2, ...argN) => expression
-        
-        let func = (arg1, arg2, ...argN) => {body}
-
-function in object
-
-        user = {
-          sayHi: function() {
-            alert("Привет");
-          }
-        };
-        
-        // сокращённая запись выглядит лучше, не так ли?
-        user = {
-          sayHi() { // то же самое, что и "sayHi: function()"
-            alert("Привет");
-          }
-        };
+- Type Conversions [type-conversions](chapters/first-steps/type-conversions.md)
+- Basic operators, maths [operators](chapters/first-steps/operators.md)
+- Comparisons [comparison](chapters/first-steps/comparison.md)
+- Conditional branching: if, '?' [ifelse](chapters/first-steps/ifelse.md)
+- Logical operators [logical-operators](chapters/first-steps/logical-operators.md)
+- Nullish coalescing operator '??' [nullish-coalescing-operator](chapters/first-steps/nullish-coalescing-operator.md)
+- Loops: while and for [while-for](chapters/first-steps/while-for.md)
+- The "switch" statement [switch](chapters/first-steps/switch.md)
+- Functions [function-basics](chapters/first-steps/function-basics.md)
+- Function expressions [function-expressions](chapters/first-steps/function-expressions.md)
+- Arrow functions, the basics [arrow-functions-basics](chapters/first-steps/arrow-functions-basics.md)
+- JavaScript specials [javascript-specials](chapters/first-steps/javascript-specials.md)
 
 ### Полифилы(перевод)
 
