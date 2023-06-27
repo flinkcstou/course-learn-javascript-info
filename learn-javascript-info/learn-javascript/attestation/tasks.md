@@ -76,6 +76,15 @@
     console.error('foo' == NaN)
     console.error(NaN == NaN)
 
+
+            let a = 0;
+            let b = "0";
+            a == b // true, переменная b преобразуется в `number` и значения будет 0 
+            
+            let aB = Boolean(a) //false, переменная a в boolean это false  
+            let bB = Boolean(b) // true, переменная b в boolean это true
+            aB == bB // false 
+
 ### Оператор нулевого слияния (??)
 
         var b = false ?? 0

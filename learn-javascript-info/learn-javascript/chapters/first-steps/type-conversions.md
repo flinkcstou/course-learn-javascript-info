@@ -49,7 +49,7 @@ value primitive convert to string used:
 value primitive convert to number used:
 
 - Number(value)
-- +value // унарный оператор(перевод)
+- +value // унарный оператор(unary operator)
 - any mathematical arithmetic operator (/, %, -, *)
 
         var message = 'hello'
@@ -80,7 +80,7 @@ value primitive convert to number used:
         
         1 + 1 // 2
         +"1" // 1  unary operator 'plus' convert to number because it's arithmetic operator 
-        true + "1" // 'true1'  binary operator `plus` and we had diferent data type operands. it will be convert to string
+        true + "1" // 'true1'  binary operator `plus` and we had data type operands of STRING. it will be convert to string
 
 > undefined => NaN
 >
@@ -148,7 +148,7 @@ value primitive convert to boolean used:
      Number(NaN); String(NaN); Boolean(NaN)
      Number(Infinity); String(Infinity); Boolean(Infinity)
      Number(-Infinity); String(-Infinity); Boolean(-Infinity)
-     Number('); String('); Boolean(')
+     Number(''); String(''); Boolean('')
      Number('20'); String('20'); Boolean('20')
      Number('twenty'); String('twenty'); Boolean('twenty')
      Number([ ]); String([ ]); Boolean([ ])
@@ -160,3 +160,5 @@ value primitive convert to boolean used:
      Number({ }); String({ }); Boolean({ })
      Number(null); String(null); Boolean(null)
      Number(undefined); String(undefined); Boolean(undefined)
+
+
