@@ -41,48 +41,6 @@
 - Тип данных Symbol - Symbol type [](chapters/object-basics)
 - Преобразование объектов в примитивы - Object to primitive conversion [](chapters/object-basics)
 
-### Объекты
-
-    let user = new Object(); // синтаксис "конструктор объекта"(перевод)
-    let user = {};  // синтаксис "литерал объекта"(перевод)
-
-    let user = {
-      name: "John",
-      "likes birds": true  // имя свойства из нескольких слов должно быть в кавычках
-    };
-    
-    let user = {};
-    
-    // присваивание значения свойству
-    user["likes birds"] = true;
-    
-    // получение значения свойства
-    user["likes birds"]
-    
-    let key = "likes birds";
-   
-    // то же самое, что и user["likes birds"] = true;
-    user[key] = true;
-    
-    let bag = {
-      [fruit]: 5, // имя свойства будет взято из переменной fruit
-    };
-    
-    alert( bag.apple ); // 5, если fruit="apple"
-    
-    
-    let user = { name: "John", age: 30 };
-    
-    alert( "age" in user ); // true, user.age существует
-    alert( "blabla" in user ); // false, user.blabla не существует
-    
-    for (let key in user) {
-      // ключи
-      alert( key );  // name, age, isAdmin
-      // значения ключей
-      alert( user[key] ); // John, 30, true
-    }
-
 ### Методы объекта, "this"
 
         name = 'Global Name';
