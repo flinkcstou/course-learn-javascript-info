@@ -30,6 +30,17 @@
 - Автоматическое тестирование c использованием фреймворка Mocha - Automated testing with Mocha [](chapters/code-quality)
 - Полифилы - Polyfills and transpilers  [polyfills](chapters/code-quality/polyfills.md)
 
+### Объекты: основы(Objects: the basics)
+
+- Объекты - Objects [object](chapters/object-basics/object.md) || [code](codes/object-basics/object.ts)
+- Копирование объектов и ссылки - Object references and copying [](chapters/object-basics)
+- Сборка мусора - Garbage collection [](chapters/object-basics)
+- Методы объекта, "this" - Object methods, "this" [](chapters/object-basics)
+- Конструктор, оператор "new" - Constructor, operator "new" [](chapters/object-basics)
+- Опциональная цепочка '?.' - Optional chaining '?.' [](chapters/object-basics)
+- Тип данных Symbol - Symbol type [](chapters/object-basics)
+- Преобразование объектов в примитивы - Object to primitive conversion [](chapters/object-basics)
+
 ### Объекты
 
     let user = new Object(); // синтаксис "конструктор объекта"(перевод)
