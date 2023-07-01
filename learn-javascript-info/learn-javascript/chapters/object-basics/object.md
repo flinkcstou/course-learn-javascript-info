@@ -59,7 +59,7 @@ https://learn.javascript.ru/object
 - In the example above, properties have the same names as variables. The use-case of making a property from a variable
   is
   so common, that there’s a special property value shorthand to make it shorter.
-- Instead of name:name we can just write name, like this:
+  - Instead of name:name we can just write name, like this:
 
 >
 
