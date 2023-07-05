@@ -33,3 +33,5 @@
 - заимствование метода = method borrowing
 - Прототипное наследование - prototypal inheritance
 - интегрированная среда разработки - Integrated Development Environment
+- структура данных - structure data
+- типы объектов - kinds of objects
