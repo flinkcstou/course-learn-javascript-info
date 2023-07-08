@@ -60,7 +60,8 @@
 ### Продвинутая работа с функциями(Advanced working with functions)
 
 - Рекурсия и стек - Recursion and stack [recursion](chapters/advanced-functions/recursion.md)
-- Остаточные параметры и оператор расширения - Rest parameters and spread syntax [](chapters/advanced-functions/)
+- Остаточные параметры и оператор расширения - Rest parameters and spread
+  syntax [rest-parameters-spread-operator](chapters/advanced-functions/rest-parameters-spread-operator.md)
 - Замыкание - Variable scope, closure [](chapters/advanced-functions/)
 - Устаревшее ключевое слово "var" - The old "var" [](chapters/advanced-functions/)
 - Глобальный объект - Global object [](chapters/advanced-functions/)
@@ -70,7 +71,6 @@
 - Декораторы и переадресация вызова, call/apply - Decorators and forwarding, call/apply [](chapters/advanced-functions/)
 - Привязка контекста к функции - Function binding [](chapters/advanced-functions/)
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/advanced-functions/)
-
 
 ### Замыкание
 
