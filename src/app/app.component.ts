@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ObjectBasics } from '../../learn-javascript-info/learn-javascript/codes/object-basics/object-basics';
+import { _1ObjectBasics } from '../../learn-javascript-info/learn-javascript/codes/object-basics/_1-object-basics';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'learn-javascript-info';
 
   constructor() {
-    new ObjectBasics();
+    new _1ObjectBasics();
   }
 
 }

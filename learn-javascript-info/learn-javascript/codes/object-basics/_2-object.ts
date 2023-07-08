@@ -1,6 +1,6 @@
-export class ObjectJs {
+export class _2Object {
   constructor() {
-    console.error('ObjectJs');
+    console.error('_2Object');
     this.method1();
 
 
