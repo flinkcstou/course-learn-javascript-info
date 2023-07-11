@@ -66,7 +66,7 @@
 - Рекурсия и стек - Recursion and stack [recursion](chapters/6-advanced-functions/recursion.md) ||   [code](codes/advanced-function/_2-recursion.ts)
 - Остаточные параметры и оператор расширения - Rest parameters and spread || 
   syntax [rest-parameters-spread-operator](chapters/6-advanced-functions/rest-parameters-spread-operator.md)
-- Замыкание - Variable scope, closure [](chapters/6-advanced-functions/)
+- Замыкание - Variable scope, closure [](chapters/6-advanced-functions/)   [code](codes/advanced-function/_4-closure.ts)
 - Устаревшее ключевое слово "var" - The old "var" [](chapters/6-advanced-functions/)
 - Глобальный объект - Global object [](chapters/6-advanced-functions/)
 - Объект функции, NFE - Function object, NFE [](chapters/6-advanced-functions/)
@@ -77,23 +77,7 @@
 - Привязка контекста к функции - Function binding [](chapters/6-advanced-functions/)
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/6-advanced-functions/)
 
-### Замыкание
 
-Лучше с нуля прочитать из сайта и решить задачки
-
-Все созданные функции берут outer lexical environment там где они были объявлены, а не там где они были вызваны
-
-All functions “on birth” receive a hidden property [[Environment]] with a reference to the Lexical Environment of their
-creatio
-
-During the execution of makeCounter(), a tiny nested function is created.
-
-It doesn’t matter whether the function is created using Function Declaration or Function Expression. All functions get
-the [[Environment]] property that references the Lexical Environment in which they were made. So our new tiny nested
-function gets it as well.
-
-For our new nested function the value of [[Environment]] is the current Lexical Environment of makeCounter() (where it
-was born):
 
 ### Объект функции, NFE
 

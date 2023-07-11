@@ -18,16 +18,16 @@
 * */
 
 
-export class ClosureVariableScope {
+export class _4Closure {
 
   constructor() {
-    this.method();
-    this.method1();
-    this.method2();
-    this.method3();
-    this.method4();
+    // this.method();
+    // this.method1();
+    // this.method2();
+    // this.method3();
+    // this.method4();
     this.method5();
-    this.method6();
+    // this.method6();
   }
 
   method() {

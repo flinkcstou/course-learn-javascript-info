@@ -13,6 +13,7 @@ https://learn.javascript.ru/destructuring-assignment
 let [firstName, secondName] = ['Nazar', 'Abu']
 
 // is equal to 
+
 let firstName = arr[0];
 let surname = arr[1];
 

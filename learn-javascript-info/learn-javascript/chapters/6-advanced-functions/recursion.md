@@ -3,7 +3,11 @@
 https://learn.javascript.ru/recursion
 
 - `terminology`
-    - das
+    - Контекст выполнения, стек - The execution context and stack
+
+- `definition`
+    - `Контекст выполнения` – специальная внутренняя структура данных, которая содержит информацию о вызове функции.
+
 
 - связанный список
 
