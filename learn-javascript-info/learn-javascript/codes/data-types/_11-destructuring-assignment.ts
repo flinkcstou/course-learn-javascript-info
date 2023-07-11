@@ -117,6 +117,10 @@ export class _11DestructuringAssignment {
               height = '111'
             }
           }: OptionI) {
+
+    // если мы хотим сначала деструктурировать в parameter-ах, а потом опять собрать, то это просто
+    // создаем новый объект где все значения проставляем вручную и можем дальше передавать
+
     const optionI: OptionI = {
       title, items, size: {
         width,
