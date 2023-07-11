@@ -63,14 +63,16 @@
 
 ### Продвинутая работа с функциями(Advanced working with functions)
 
-- Рекурсия и стек - Recursion and stack [recursion](chapters/6-advanced-functions/recursion.md) ||   [code](codes/advanced-function/_2-recursion.ts)
-- Остаточные параметры и оператор расширения - Rest parameters and spread || 
+- Рекурсия и стек - Recursion and stack [recursion](chapters/6-advanced-functions/recursion.md)
+  ||   [code](codes/advanced-function/_2-recursion.ts)
+- Остаточные параметры и оператор расширения - Rest parameters and spread ||
   syntax [rest-parameters-spread-operator](chapters/6-advanced-functions/rest-parameters-spread-operator.md)
-- Замыкание - Variable scope, closure [](chapters/6-advanced-functions/)   [code](codes/advanced-function/_4-closure.ts)
+- Замыкание - Variable scope,
+  closure [closure](chapters/6-advanced-functions/closure.md)   [code](codes/advanced-function/_4-closure.ts)
 - Устаревшее ключевое слово "var" - The old "var" [](chapters/6-advanced-functions/)
 - Глобальный объект - Global object [](chapters/6-advanced-functions/)
-- Объект функции, NFE - Function object, NFE [](chapters/6-advanced-functions/)
-- Синтаксис "new Function" - The "new Function" syntax [](chapters/6-advanced-functions/)
+- Объект функции, NFE - Function object, NFE [function-object](chapters/6-advanced-functions/function-object.md)
+- Синтаксис "new Function" - The "new Function" syntax [new-function](chapters/6-advanced-functions/new-function.md)
 - Планирование: setTimeout и setInterval - Scheduling: setTimeout and setInterval [](chapters/6-advanced-functions/)
 - Декораторы и переадресация вызова, call/apply - Decorators and forwarding,
   call/apply [](chapters/6-advanced-functions/)
@@ -78,36 +80,6 @@
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/6-advanced-functions/)
 
 
-
-
-### Синтаксис "new Function"
-
-        let func = new Function([arg1, arg2, ...argN], functionBody);
-        
-        let sum = new Function('a', 'b', 'return a + b');
-        sum(1, 2); // 3
-        
-        let sayHi = new Function('alert("Hello")');
-        sayHi(); // Hello
-
-`new Function` позволяет превратить любую строку в функцию. Например, можно получить новую функцию с сервера и затем
-выполнить её:
-
-`new Function` ее lexical environment сразу смотрит на глобальный, а не на родительский
-
-        function getFunc() {
-          let value = "test";
-        
-          let func = new Function('alert(value)');
-        
-          return func;
-        }
-        
-        getFunc()(); // ошибка: value не определено~~
-
-### Планирование: setTimeout и setInterval
-
-    ---
 
 ### Декораторы и переадресация вызова, call/apply
 
