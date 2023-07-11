@@ -10,6 +10,8 @@
     - Ссылка на внешнее лексическое окружение – то есть то, которое соответствует коду снаружи (снаружи от текущих
       фигурных скобок).
 
+У любого блока `{}` есть свой `lexical environment`
+
 Все созданные функции берут outer lexical environment там где они были объявлены, а не там где они были вызваны
 
 All functions “on birth” receive a hidden property [[Environment]] with a reference to the Lexical Environment of their
