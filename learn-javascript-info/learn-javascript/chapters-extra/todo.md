@@ -9,4 +9,4 @@
 написать в chapters extra все особенности у функции. Первое это The execution context, closure, callback, еще объединить
 все terminology
 
-Нужно собрать воедино destructuring и остаточные параметры 
+Нужно собрать воедино destructuring и остаточные параметры и оператор расширения
