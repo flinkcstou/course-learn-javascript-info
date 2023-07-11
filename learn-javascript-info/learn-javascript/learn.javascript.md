@@ -27,7 +27,8 @@
 - Советы по стилю кода - Coding Style [](chapters/3-code-quality)
 - Комментарии - Comments [](chapters/3-code-quality)
 - Ниндзя-код - Ninja code [](chapters/3-code-quality)
-- Автоматическое тестирование c использованием фреймворка Mocha - Automated testing with Mocha [](chapters/3-code-quality)
+- Автоматическое тестирование c использованием фреймворка Mocha - Automated testing with
+  Mocha [](chapters/3-code-quality)
 - Полифилы - Polyfills and transpilers  [polyfills](chapters/3-code-quality/polyfills.md)
 
 ### Объекты: основы(Objects: the basics)
@@ -36,7 +37,8 @@
 - Копирование объектов и ссылки - Object references and copying [object-copy](chapters/4-object-basics/object-copy.md)
 - Сборка мусора - Garbage collection [garbage-collection](chapters/4-object-basics/garbage-collection.md)
 - Методы объекта, "this" - Object methods, "this" [object-methods](chapters/4-object-basics/object-methods.md)
-- Конструктор, оператор "new" - Constructor, operator "new" [constructor-new](chapters/4-object-basics/constructor-new.md)
+- Конструктор, оператор "new" - Constructor, operator "
+  new" [constructor-new](chapters/4-object-basics/constructor-new.md)
 - Опциональная цепочка '?.' - Optional chaining '?.' [object-basics](chapters/4-object-basics)
 - Тип данных Symbol - Symbol type [symbol](chapters/4-object-basics/symbol.md)
 - Преобразование объектов в примитивы - Object to primitive
@@ -44,23 +46,25 @@
 
 ### Типы данных(Data types)
 
-- Методы примитивов - Methods of primitives  [](chapters/5-data-types/)
+- Методы примитивов - Methods of primitives  [primitives-methods](chapters/5-data-types/primitives-methods.md)
 - Числа - Numbers [](chapters/5-data-types/)
 - Строки - Strings [](chapters/5-data-types/)
 - Массивы - Arrays [](chapters/5-data-types/)
 - Методы массивов - Array methods [](chapters/5-data-types/)
 - Перебираемые объекты - Iterables [](chapters/5-data-types/)
-- Map и Set - Map and Set [](chapters/5-data-types/)
+- Map и Set - Map and Set [](chapters/5-data-types/) ||   [code](codes/data-types/_8-map-set.ts)
 - WeakMap и WeakSet - WeakMap and WeakSet [](chapters/5-data-types/)
 - Object.keys, values, entries - Object.keys, values, entries [](chapters/5-data-types/)
-- Деструктурирующее присваивание - Destructuring assignment [](chapters/5-data-types/)
+- Деструктурирующее присваивание - Destructuring
+  assignment [destructuring-assignment](chapters/5-data-types/destructuring-assignment.md)
+  ||   [code](codes/data-types/_11-destructuring-assignment.ts)
 - Дата и время - Date and time [](chapters/5-data-types/)
 - Формат JSON, метод toJSON - JSON methods, toJSON [](chapters/5-data-types/)
 
 ### Продвинутая работа с функциями(Advanced working with functions)
 
-- Рекурсия и стек - Recursion and stack [recursion](chapters/6-advanced-functions/recursion.md)
-- Остаточные параметры и оператор расширения - Rest parameters and spread
+- Рекурсия и стек - Recursion and stack [recursion](chapters/6-advanced-functions/recursion.md) ||   [code](codes/advanced-function/_2-recursion.ts)
+- Остаточные параметры и оператор расширения - Rest parameters and spread || 
   syntax [rest-parameters-spread-operator](chapters/6-advanced-functions/rest-parameters-spread-operator.md)
 - Замыкание - Variable scope, closure [](chapters/6-advanced-functions/)
 - Устаревшее ключевое слово "var" - The old "var" [](chapters/6-advanced-functions/)
@@ -68,7 +72,8 @@
 - Объект функции, NFE - Function object, NFE [](chapters/6-advanced-functions/)
 - Синтаксис "new Function" - The "new Function" syntax [](chapters/6-advanced-functions/)
 - Планирование: setTimeout и setInterval - Scheduling: setTimeout and setInterval [](chapters/6-advanced-functions/)
-- Декораторы и переадресация вызова, call/apply - Decorators and forwarding, call/apply [](chapters/6-advanced-functions/)
+- Декораторы и переадресация вызова, call/apply - Decorators and forwarding,
+  call/apply [](chapters/6-advanced-functions/)
 - Привязка контекста к функции - Function binding [](chapters/6-advanced-functions/)
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/6-advanced-functions/)
 

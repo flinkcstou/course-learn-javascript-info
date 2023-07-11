@@ -29,7 +29,7 @@ https://learn.javascript.ru/comparison
 - если `string` то у кого больше index по unicode там и true
 - если `boolean` то у кого true там и true :)
 
-**Сравнение разных типов**
+**Сравнение разных типов** 
 
 При сравнении значений разных типов JavaScript приводит каждое из них к `number`.
 
