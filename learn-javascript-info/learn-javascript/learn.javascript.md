@@ -73,9 +73,9 @@
 - Глобальный объект - Global object [](chapters/6-advanced-functions/)
 - Объект функции, NFE - Function object, NFE [function-object](chapters/6-advanced-functions/function-object.md)
 - Синтаксис "new Function" - The "new Function" syntax [new-function](chapters/6-advanced-functions/new-function.md)
-- Планирование: setTimeout и setInterval - Scheduling: setTimeout and setInterval [](chapters/6-advanced-functions/)
+- Планирование: setTimeout и setInterval - Scheduling: setTimeout and setInterval [settimeout-setinterval](chapters/6-advanced-functions/settimeout-setinterval.md)
 - Декораторы и переадресация вызова, call/apply - Decorators and forwarding,
-  call/apply [](chapters/6-advanced-functions/)
+  call/apply [call-apply-decorators](chapters/6-advanced-functions/call-apply-decorators.md)
 - Привязка контекста к функции - Function binding [](chapters/6-advanced-functions/)
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/6-advanced-functions/)
 
