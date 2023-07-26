@@ -8,7 +8,7 @@ https://learn.javascript.ru/destructuring-assignment
 
 **array destructing**
 
-```
+```js
 
 let [firstName, secondName] = ['Nazar', 'Abu']
 
@@ -29,11 +29,11 @@ title; // Consul
 
 **Destructing work with any object which has `iterable`**
 
-```
+```js
 
 let [a, b, c] = "abc" // ['a', 'b', 'c']
 
-let [one, two , three]  = new Set([1, 2, 3])
+let [one, two, three] = new Set([1, 2, 3])
 
 let [oneMap, twoMap] = new Map([['one', 'oneValue'], ['two', 'twoValue']])
 
@@ -41,11 +41,11 @@ let [oneMap, twoMap] = new Map([['one', 'oneValue'], ['two', 'twoValue']])
 
 **Assign to anything at the left-side**
 
-```
+```js
 let user = {};
 [user.name, user.surname] = "John Smith".split(' ');
 [user.name, user.surname] = ['a', 'b', 'c']
-[user.name, user.surname] = new Set([1, 2, 3])
+  [user.name, user.surname] = new Set([1, 2, 3])
 
 
 let name, surname;
@@ -69,7 +69,7 @@ rest.length // 2
 - Значения по умолчанию будут вызываться только если с правой стороны не будет значения. Это значит если мы по умолчанию
   присвоим вызов функции, то функция вызовет только в том случае если с правой стороны отсутствует значения
 
-```
+```js
 let [name = "Guest", surname = "Anonymous"] = ["Julius"];
 
 let [name = prompt('name?'), surname = prompt('surname?')] = ["Julius"];
@@ -77,9 +77,13 @@ let [name = prompt('name?'), surname = prompt('surname?')] = ["Julius"];
 
 **Object destructuring**
 
-```
-let {var1, var2} = {var1:…, var2:…} // basic syntax
-let {prop1:varName1, prop2: varName2} = {prop1:…, prop2:…} // basic syntax
+```js
+let {var1, var2} = {var1: 'someValue1', var2: 'sosmeValue2'} // basic syntax
+let {prop1: varName1, prop2: varName2} = {prop1: 'someVlue1', prop2: 'someVlue1'} // basic syntax
+
+let obj = {name: 'Valuename', surname: 'Valuesurname'}
+let {name, surname} = obj
+let {name: firstName} = obj
 ```
 
 ```js run

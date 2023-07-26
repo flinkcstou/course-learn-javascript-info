@@ -21,14 +21,18 @@ https://learn.javascript.ru/rest-parameters-spread-operator
 
 let {a, ...rest} = {a: 'asdsa', b: 'sdfsd', c: 'fsdfds'} // rest.b, rest.c
 let [name, lastName, ...rest] = ['sdfdsf', 'fdsfds', 'fdsfsd', 'fsdfs']
+function logs(...rest) {}
 
 
 //spread syntax 
 
 let arr = ['sdfas', 'sdfds']
 let a = [...arr]
+logs(...a)
+
 
 ```
+
 
 - **spread syntax `...` works with any object which has `iterator`**
 - Посмотрим, что происходит. Под капотом оператор расширения использует итераторы, чтобы перебирать элементы. Так же,
@@ -56,3 +60,6 @@ getSpread(...map);
 
 
 ```
+
+- если это вызов функции и вы видите `...args` то это `spread syntax`  `log(...args)`
+- если это объявления функции и вы видите `...parameters` то это 'rest parameters' function `logs(...parameters)`

@@ -30,6 +30,10 @@ export class _11DestructuringAssignment {
     // this.method3();
     // this.method4();
     this.method5();
+    // this.method6()
+    // this.method7()
+    // this.method8()
+    // this.method9()
 
   }
 
