@@ -15,57 +15,56 @@ export class _9CallApplyDecorators {
     this.method9();
   }
 
-  method9() {
+  method1010() {
 
-    let car = {
-      name: 'toyota'
-    };
-
-    function logger(...x: any) {
-      console.error(...x);
+    function f(a) {
+      console.log(a);
     }
 
-    function getName(...x: any) {
-      logger(x);
-      // @ts-ignore
-      console.error(this.name);
+    function throttle(func, throttleTime) {
+
+
+      let toStartTimer = null;
+      let nextArgs = null;
+      let wrapper = function(...args) {
+
+        if (toStartTimer) {
+          nextArgs = args;
+          return;
+        }
+
+        func.apply(this, args);
+
+        toStartTimer = setTimeout(() => {
+
+          toStartTimer = null;
+
+          if (nextArgs) {
+            func.apply(this, nextArgs);
+            nextArgs = null;
+
+          }
+        }, throttleTime);
+
+
+      };
+      return wrapper;
     }
 
-    function bind(context: any, func: any, ...args: any) {
-      function callApply(...a: any) {
+// f1000 передаёт вызовы f максимум раз в 1000 мс
+    let f1000 = throttle(f, 1000);
 
-        return func.apply(context, [...args, ...a]);
-      }
+    f1000(1); // показывает 1
+    f1000(2); // (ограничение, 1000 мс ещё нет)
+    f1000(3); // (ограничение, 1000 мс ещё нет)
 
-      return callApply;
-    }
+// когда 1000 мс истекли ...
+// ...выводим 3, промежуточное значение 2 было проигнорировано
 
-    let name = bind(car, getName, 'alloha');
-
-    name('asdfsf');
-
-    getName.myBind = function(context: any, ...args: any) {
-      const symbol = Symbol();
-      const self = this;
-
-      function callApply(...args1: any) {
-        context[symbol] = self;
-        const result = context[symbol](...args, ...args1);
-        delete context[symbol];
-        return result;
-      }
-
-      return callApply;
-
-
-    };
-
-    let name1 = getName.myBind(car, 'alloha');
-    name1('safasdf');
 
   }
 
-  method8() {
+  method10() {
 
     function logger(x: any) {
       console.error(x);
@@ -122,7 +121,40 @@ export class _9CallApplyDecorators {
 
   }
 
-  method7() {
+  method99() {
+
+    function work(a) {
+      console.error(a);
+    }
+
+    function debounce(func, debounce) {
+      let wrapper: any = function(...args) {
+
+        if (wrapper.timer) {
+          return;
+        }
+
+        func.apply(this, args);
+
+        wrapper.timer = setTimeout(() => wrapper.timer = null, debounce);
+
+      };
+      wrapper.timer = null;
+      return wrapper;
+    }
+
+    let f = debounce(work, 1000);
+
+    f(1); // выполняется немедленно
+    f(2); // проигнорирован
+
+    setTimeout(() => f(3), 100); // проигнорирован (прошло только 100 мс)
+    setTimeout(() => f(4), 1100); // выполняется
+    setTimeout(() => f(5), 1500); // проигнорирован (прошло только 400 мс от последнего вызова)
+
+  }
+
+  method9() {
 
     function logger(x: any) {
       console.error(x);
@@ -155,22 +187,17 @@ export class _9CallApplyDecorators {
     setTimeout(() => f(5), 1500); // проигнорирован (прошло только 400 мс от последнего вызова)
   }
 
-  method6() {
-    function f(x: any) {
-      console.error(x);
+  method8() {
+    function f(x) {
+      alert(x);
     }
 
-    function delay(func: (...params: any) => any, timer: number) {
+    function delay(func, delay) {
 
-      function callApply(...args: any) {
-        setTimeout(() => {
-          // @ts-ignore
-          func.apply(this, args);
-        }, timer);
-      }
-
-      return callApply;
-
+      let wrapper = function(...args) {
+        setTimeout(() => func.apply(this, args), delay ?? 0);
+      };
+      return wrapper;
     }
 
 // создаём обёртки
@@ -181,44 +208,36 @@ export class _9CallApplyDecorators {
     f1500('test'); // показывает "test" после 1500 мс
   }
 
-  method5() {
+  method7() {
 
-
-    function work(a: any, b: any) {
-      console.error(a, b);
+    function work(a, b) {
+      alert(a + b); // произвольная функция или метод
     }
 
-    function spy(func: (a: any, b: any) => any) {
+    function spy(func) {
 
+      let wrapper: any = function(...args) {
+        wrapper.calls.push(args);
+        func(...args);
+      };
+      wrapper.calls = [];
 
-      function applyCall(a: any, b: any) {
-        applyCall.calls.push([a, b]);
-        // @ts-ignore
-        return func.apply(this, [a, b]);
-      }
-
-      // @ts-ignore
-      applyCall.calls = [];
-
-      return applyCall;
-
+      return wrapper;
     }
 
-    // @ts-ignore
-    work = spy(work);
+    let work1 = spy(work);
 
-    work(1, 2); // 3
-    work(4, 5); // 9
+    work1(1, 2);
+
     // @ts-ignore
-    for (let args of work.calls) {
+    for (let args of work1.calls) {
       console.error('call:' + args.join()); // "call:1,2", "call:4,5"
     }
 
 
   }
 
-
-  method44() {
+  method67() {
 
     // TODO attestation get this task for reference-type
     // todo extra this
@@ -254,7 +273,7 @@ export class _9CallApplyDecorators {
 
   }
 
-  method43() {
+  method66() {
 
     let objectFunction: any = function() {
       this;
@@ -271,6 +290,56 @@ export class _9CallApplyDecorators {
 
     objectFunction.someProperties; // this == objectFunction
 
+
+  }
+
+  method5() {
+
+    let car = {
+      name: 'toyota'
+    };
+
+    function logger(...x: any) {
+      console.error(...x);
+    }
+
+    function getName(...x: any) {
+      logger(x);
+      // @ts-ignore
+      console.error(this.name);
+    }
+
+    function bind(context: any, func: any, ...args: any) {
+      function callApply(...a: any) {
+
+        return func.apply(context, [...args, ...a]);
+      }
+
+      return callApply;
+    }
+
+    let name = bind(car, getName, 'alloha');
+
+    name('asdfsf');
+
+    getName.myBind = function(context: any, ...args: any) {
+      const symbol = Symbol();
+      const self = this;
+
+      function callApply(...args1: any) {
+        context[symbol] = self;
+        const result = context[symbol](...args, ...args1);
+        delete context[symbol];
+        return result;
+      }
+
+      return callApply;
+
+
+    };
+
+    let name1 = getName.myBind(car, 'alloha');
+    name1('safasdf');
 
   }
 
@@ -337,7 +406,6 @@ export class _9CallApplyDecorators {
 
 
   }
-
 
   method2() {
 

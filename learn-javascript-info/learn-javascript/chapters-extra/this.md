@@ -4,6 +4,8 @@
     - reference-type.md
     - https://habr.com/ru/post/464163/
     - как работает под капотом this
-    - _9-call-apply-decorators.ts // method3
+    - _9-call-apply-decorators.ts // method3 method4 method5
     - this это не есть lexical environment и нужно написать сделать разницу между ними
-    - 
+    - Расписать все возможные варианты как пользоваться this/ call/ apply. как он теряется контекс. как сохраняется
+      контекст. как динимеческий передавать. как статический оставлять.
+    - как работает call, apply , bind как работает под капотом
