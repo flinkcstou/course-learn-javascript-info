@@ -73,63 +73,12 @@
 - Глобальный объект - Global object [](chapters/6-advanced-functions/)
 - Объект функции, NFE - Function object, NFE [function-object](chapters/6-advanced-functions/function-object.md)
 - Синтаксис "new Function" - The "new Function" syntax [new-function](chapters/6-advanced-functions/new-function.md)
-- Планирование: setTimeout и setInterval - Scheduling: setTimeout and setInterval [settimeout-setinterval](chapters/6-advanced-functions/settimeout-setinterval.md)
+- Планирование: setTimeout и setInterval - Scheduling: setTimeout and
+  setInterval [settimeout-setinterval](chapters/6-advanced-functions/settimeout-setinterval.md)
 - Декораторы и переадресация вызова, call/apply - Decorators and forwarding,
-  call/apply [call-apply-decorators](chapters/6-advanced-functions/call-apply-decorators.md)
+  call/apply [call-apply-decorators](chapters/6-advanced-functions/call-apply-decorators.md) [code](codes/advanced-function/_9-call-apply-decorators.ts)
 - Привязка контекста к функции - Function binding [](chapters/6-advanced-functions/)
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/6-advanced-functions/)
-
-
-
-### Декораторы и переадресация вызова, call/apply
-
-Лучше с нуля прочитать из сайта и решить задачки
-
-create custom method as call
-
-      let arr: any[] = [];
-
-
-    // @ts-ignore
-    arr.join.myCall = function(context: any) {
-
-      const symbol = Symbol();
-
-      context[symbol] = this;
-
-      const result = context[symbol]();
-      delete context[symbol];
-      return result;
-
-    };
-    // identify 
-        console.error(arr.join.call(asf));
-        // @ts-ignore
-        console.error(arr.join.myCall(asf));
-
->
-
-    /*
-    let object = {
-    objectFunction: objectFunction
-    }
-
-    let objectFunction = function(){
-          this
-    }
-    objectFunction.someProperties = {}
-
-    object.objectFunction() // object
-    object.objectFunction.someProperties
-
-
-    objectFunction.someProperties // this == objectFunction
-
-
-
-    * */
-
-see how to write polyfill for the call(), apply(), and bind() methods in JavaScript
 
 ### Привязка контекста к функции
 

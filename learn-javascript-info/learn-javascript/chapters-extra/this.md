@@ -1,0 +1,9 @@
+- нужно написать все особенности this // взять с главы
+    - object-methods.md
+    - constructor.md
+    - reference-type.md
+    - https://habr.com/ru/post/464163/
+    - как работает под капотом this
+    - _9-call-apply-decorators.ts // method3
+    - this это не есть lexical environment и нужно написать сделать разницу между ними
+    - 

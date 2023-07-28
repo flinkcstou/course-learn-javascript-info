@@ -1,18 +1,18 @@
-export class CallApplyDecorators {
+export class _9CallApplyDecorators {
 
   constructor() {
 
     // https://javascript.plainenglish.io/writing-polyfills-for-call-apply-and-bind-methods-in-javascript-13b4ba313273
 
-      // this.method1();
-      // this.method2();
-      // this.method3();
-      // this.method4();
-      // this.method5();
-      // this.method6();
-      // this.method7();
-      // this.method8();
-      this.method9();
+    // this.method1();
+    // this.method2();
+    // this.method3();
+    // this.method4();
+    // this.method5();
+    // this.method6();
+    // this.method7();
+    // this.method8();
+    this.method9();
   }
 
   method9() {
@@ -217,6 +217,63 @@ export class CallApplyDecorators {
 
   }
 
+
+  method44() {
+
+    // TODO attestation get this task for reference-type
+    // todo extra this
+
+    let obj: any = {
+      func() {
+        return this;
+      }
+    };
+
+
+    function func() {
+      return this;
+    }
+
+    function funcOuter() {
+      func();
+      return this;
+    }
+
+
+    obj.func();// this  = obj
+
+    func(); // this = window
+
+    obj.func2 = func;
+    obj.func2(); // this = obj
+
+    funcOuter(); // this = window
+
+    obj.funcOuter = funcOuter;
+    obj.funcOuter(); // this = obj AND func() this = window AND it's work by principe - Reference Type.
+
+  }
+
+  method43() {
+
+    let objectFunction: any = function() {
+      this;
+    };
+
+    let object = {
+      objectFunction: objectFunction
+    };
+
+    objectFunction.someProperties = {};
+
+    object.objectFunction(); // object
+    object.objectFunction.someProperties;
+
+    objectFunction.someProperties; // this == objectFunction
+
+
+  }
+
   method4() {
 
     var asf = {
@@ -245,7 +302,6 @@ export class CallApplyDecorators {
     console.error(arr.join.call(asf));
     // @ts-ignore
     console.error(arr.join.myCall(asf));
-
 
   }
 
@@ -278,30 +334,6 @@ export class CallApplyDecorators {
 
 
     getCarName.myCall(car);
-
-
-    /*
-
-
-
-    let object = {
-    objectFunction: objectFunction
-    }
-
-    let objectFunction = function(){
-          this
-    }
-    objectFunction.someProperties = {}
-
-    object.objectFunction() // object
-    object.objectFunction.someProperties
-
-
-    objectFunction.someProperties // this == objectFunction
-
-
-
-    * */
 
 
   }
