@@ -1,4 +1,4 @@
-export class BindJs {
+export class _10Bind {
   constructor() {
 
     // this.method1();

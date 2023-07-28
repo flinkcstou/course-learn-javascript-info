@@ -64,7 +64,7 @@
 ### Продвинутая работа с функциями(Advanced working with functions)
 
 - Рекурсия и стек - Recursion and stack [recursion](chapters/6-advanced-functions/recursion.md)
-  ||   [code](codes/advanced-function/_2-recursion.ts)
+  || [code](codes/advanced-function/_2-recursion.ts)
 - Остаточные параметры и оператор расширения - Rest parameters and spread ||
   syntax [rest-parameters-spread-operator](chapters/6-advanced-functions/rest-parameters-spread-operator.md)
 - Замыкание - Variable scope,
@@ -76,33 +76,11 @@
 - Планирование: setTimeout и setInterval - Scheduling: setTimeout and
   setInterval [settimeout-setinterval](chapters/6-advanced-functions/settimeout-setinterval.md)
 - Декораторы и переадресация вызова, call/apply - Decorators and forwarding,
-  call/apply [call-apply-decorators](chapters/6-advanced-functions/call-apply-decorators.md) [code](codes/advanced-function/_9-call-apply-decorators.ts)
-- Привязка контекста к функции - Function binding [](chapters/6-advanced-functions/)
+  call/apply [call-apply-decorators](chapters/6-advanced-functions/call-apply-decorators.md)
+  || [code](codes/advanced-function/_9-call-apply-decorators.ts)
+- Привязка контекста к функции - Function binding [bind](chapters/6-advanced-functions/bind.md)
+  || [code](codes/advanced-function/_10-bind.ts)
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/6-advanced-functions/)
-
-### Привязка контекста к функции
-
-Лучше с нуля прочитать из сайта и решить задачки
-
-как работает bind
-
-    let user = {
-      name: 'Vasya',
-      sayHi() {
-        console.error('this:', this.name);
-      }
-    };
-
-    function bind(context: any, func: any, ...args: any) {
-      return function(...args1: any) {
-        return func.apply(context, [...args, args1]);
-      };
-    }
-
-    let sayHi = user.sayHi.bind(user);
-    let sayHi1 = () => user.sayHi();
-    setTimeout(sayHi, 100);
-    setTimeout(sayHi1, 100);
 
 ### Повторяем стрелочные функции
 
