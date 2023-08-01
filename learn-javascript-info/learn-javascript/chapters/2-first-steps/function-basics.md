@@ -36,7 +36,7 @@ https://learn.javascript.ru/function-basics
   using `=`:  `function showMessage(from, text = "no text given") {}`
 
 **Default parameters in old JavaScript code (Alternative default parameters)**
-   
+
     function showMessage(from, text) {
     if (text === undefined) {
     text = 'no text given';
@@ -58,9 +58,6 @@ https://learn.javascript.ru/function-basics
     // if count is undefined or null, show "unknown"
     alert(count ?? "unknown");
     }
-
-
-
 
 **Function Declaration (Объявление Функции):**
 
@@ -94,3 +91,43 @@ https://learn.javascript.ru/function-basics
             alert("Привет");
           }
         };
+
+- local declaration function
+    - если вдруг мы хотим функцию, которая будет вызываться внутри самой себя(recursion) и никто не должен
+      переопределить
+    - Оно позволяет функции ссылаться на себя же.
+    - Оно не доступно за пределами функции.
+
+**Особенности потери ссылок на variable**
+
+```js
+
+let sayHi = function (who) {
+  if (who) {
+    alert(`Hello, ${who}`);
+  } else {
+    sayHi("Guest"); // Ошибка: sayHi не является функцией
+  }
+};
+
+
+let welcome = sayHi;
+sayHi = null;
+
+welcome(); // Ошибка, вложенный вызов sayHi больше не работает!
+
+
+let sayHi = function func(who) {
+  if (who) {
+    alert(`Hello, ${who}`);
+  } else {
+    func("Guest"); // Теперь всё в порядке
+  }
+};
+
+let welcome = sayHi;
+sayHi = null;
+
+welcome(); // Hello, Guest (вложенный вызов работает)
+
+```
