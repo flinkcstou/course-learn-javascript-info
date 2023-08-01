@@ -1,4 +1,4 @@
-export class SettimeoutSetinterval {
+export class _8SettimeoutSetinterval {
 
   constructor() {
     // this.method1();

@@ -14,6 +14,8 @@
 
 - `extra task`
     - see how to write polyfill for the call(), apply(), and bind() methods in JavaScript
+    - implement your own bind method
+    - custom implement of bind method
 
 - `about`
     - Лучше с нуля прочитать из сайта и решить задачки

@@ -75,6 +75,7 @@
 - Синтаксис "new Function" - The "new Function" syntax [new-function](chapters/6-advanced-functions/new-function.md)
 - Планирование: setTimeout и setInterval - Scheduling: setTimeout and
   setInterval [settimeout-setinterval](chapters/6-advanced-functions/settimeout-setinterval.md)
+  || [code](codes/advanced-function/_8-settimeout-setinterval.ts)
 - Декораторы и переадресация вызова, call/apply - Decorators and forwarding,
   call/apply [call-apply-decorators](chapters/6-advanced-functions/call-apply-decorators.md)
   || [code](codes/advanced-function/_9-call-apply-decorators.ts)
@@ -82,12 +83,14 @@
   || [code](codes/advanced-function/_10-bind.ts)
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/6-advanced-functions/)
 
+### Свойства объекта, их конфигурация(Object properties configuration)
 
-
-
-### Свойства - геттеры и сеттеры
-
-Лучше с нуля прочитать из сайта
+- Флаги и дескрипторы свойств - Property flags and
+  descriptors [property-descriptors](chapters/7-object-properties/1-property-descriptors.md)
+  || [code](codes/object-properties/_1-property-descriptors.ts)
+- Свойства - геттеры и сеттеры -Property getters and
+  setters [property-descriptors](chapters/7-object-properties/1-property-descriptors.md)
+  || [code](codes/object-properties/_1-property-descriptors.ts)
 
 ### Прототипное наследование
 
