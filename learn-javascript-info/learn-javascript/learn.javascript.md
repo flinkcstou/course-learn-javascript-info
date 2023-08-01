@@ -92,7 +92,14 @@
   setters [property-descriptors](chapters/7-object-properties/1-property-descriptors.md)
   || [code](codes/object-properties/_1-property-descriptors.ts)
 
-### Прототипное наследование
+### Прототипы, наследование(Prototypes, inheritance)
+
+ - Прототипное наследование - Prototypal inheritance [](chapters/8-prototypes)
+ - F.prototype - F.prototype [](chapters/8-prototypes)
+ - Встроенные прототипы - Native prototypes [](chapters/8-prototypes)
+ - Методы прототипов, объекты без свойства __proto__ - Prototype methods, objects without __proto__ [](chapters/8-prototypes)
+
+
 
 дописать
 
