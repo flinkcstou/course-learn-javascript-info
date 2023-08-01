@@ -94,9 +94,21 @@
 
 ### Прототипы, наследование(Prototypes, inheritance)
 
-- Прототипное наследование - Prototypal inheritance [](chapters/8-prototypes)
-- F.prototype - F.prototype [](chapters/8-prototypes)
-- Встроенные прототипы - Native prototypes [](chapters/8-prototypes)
+- Прототипное наследование - Prototypal
+  inheritance [prototype-inheritance](chapters/8-prototypes/1-prototype-inheritance.md)
+- F.prototype - F.prototype [function-prototype](chapters/8-prototypes/2-function-prototype.md)
+- Встроенные прототипы - Native prototypes [native-prototypes](chapters/8-prototypes/3-native-prototypes.md)
 - Методы прототипов, объекты без свойства __proto__ - Prototype methods, objects without __
-  proto__ [](chapters/8-prototypes)
+  proto__ [prototype-methods](chapters/8-prototypes/4-prototype-methods.md)
+
+### Классы (Classes)
+
+- Класс: базовый синтаксис - Class basic syntax [class](chapters/9-classes/1-class.md)
+- Наследование классов - Class inheritance [](chapters/9-classes/)
+- Статические свойства и методы - Static properties and methods [](chapters/9-classes/)
+- Приватные и защищённые методы и свойства - Private and protected properties and methods [](chapters/9-classes/)
+- Расширение встроенных классов - Extending built-in classes [](chapters/9-classes/)
+- Проверка класса: "instanceof" - Class checking: "instanceof" [](chapters/9-classes/)
+- Примеси - Mixins [](chapters/9-classes/)
+
 
