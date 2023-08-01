@@ -1,4 +1,4 @@
-export class FPrototype {
+export class _2FunctionPrototype {
 
 
   constructor() {

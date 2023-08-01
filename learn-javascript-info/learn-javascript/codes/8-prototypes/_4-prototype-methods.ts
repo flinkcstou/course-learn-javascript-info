@@ -1,4 +1,4 @@
-export class PrototypeMethods {
+export class _4PrototypeMethods {
   constructor() {
     // this.method1();
     // this.method2();

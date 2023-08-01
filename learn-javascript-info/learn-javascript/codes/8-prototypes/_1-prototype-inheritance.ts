@@ -1,4 +1,4 @@
-export class PrototypeInheritance {
+export class _1PrototypeInheritance {
 
   constructor() {
     // this.method1();

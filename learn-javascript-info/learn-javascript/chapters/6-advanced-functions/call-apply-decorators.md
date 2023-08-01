@@ -24,6 +24,6 @@
     - das
 
 - `codes`
-    - [code](../../codes/advanced-function/_9-call-apply-decorators.ts)
+    - [code](../../codes/6-advanced-function/_9-call-apply-decorators.ts)
 
 

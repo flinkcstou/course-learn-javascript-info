@@ -33,7 +33,7 @@
 
 ### Объекты: основы(Objects: the basics)
 
-- Объекты - Objects [object](chapters/4-object-basics/object.md) || [code](codes/object-basics/_2-object.ts)
+- Объекты - Objects [object](chapters/4-object-basics/object.md) || [code](codes/4-object-basics/_2-object.ts)
 - Копирование объектов и ссылки - Object references and copying [object-copy](chapters/4-object-basics/object-copy.md)
 - Сборка мусора - Garbage collection [garbage-collection](chapters/4-object-basics/garbage-collection.md)
 - Методы объекта, "this" - Object methods, "this" [object-methods](chapters/4-object-basics/object-methods.md)
@@ -52,45 +52,45 @@
 - Массивы - Arrays [](chapters/5-data-types/)
 - Методы массивов - Array methods [](chapters/5-data-types/)
 - Перебираемые объекты - Iterables [](chapters/5-data-types/)
-- Map и Set - Map and Set [](chapters/5-data-types/) ||   [code](codes/data-types/_8-map-set.ts)
+- Map и Set - Map and Set [](chapters/5-data-types/) ||   [code](codes/5-data-types/_8-map-set.ts)
 - WeakMap и WeakSet - WeakMap and WeakSet [](chapters/5-data-types/)
 - Object.keys, values, entries - Object.keys, values, entries [](chapters/5-data-types/)
 - Деструктурирующее присваивание - Destructuring
   assignment [destructuring-assignment](chapters/5-data-types/destructuring-assignment.md)
-  ||   [code](codes/data-types/_11-destructuring-assignment.ts)
+  ||   [code](codes/5-data-types/_11-destructuring-assignment.ts)
 - Дата и время - Date and time [](chapters/5-data-types/)
 - Формат JSON, метод toJSON - JSON methods, toJSON [](chapters/5-data-types/)
 
 ### Продвинутая работа с функциями(Advanced working with functions)
 
 - Рекурсия и стек - Recursion and stack [recursion](chapters/6-advanced-functions/recursion.md)
-  || [code](codes/advanced-function/_2-recursion.ts)
+  || [code](codes/6-advanced-function/_2-recursion.ts)
 - Остаточные параметры и оператор расширения - Rest parameters and spread ||
   syntax [rest-parameters-spread-operator](chapters/6-advanced-functions/rest-parameters-spread-operator.md)
 - Замыкание - Variable scope,
-  closure [closure](chapters/6-advanced-functions/closure.md)   [code](codes/advanced-function/_4-closure.ts)
+  closure [closure](chapters/6-advanced-functions/closure.md)   [code](codes/6-advanced-function/_4-closure.ts)
 - Устаревшее ключевое слово "var" - The old "var" [](chapters/6-advanced-functions/)
 - Глобальный объект - Global object [](chapters/6-advanced-functions/)
 - Объект функции, NFE - Function object, NFE [function-object](chapters/6-advanced-functions/function-object.md)
 - Синтаксис "new Function" - The "new Function" syntax [new-function](chapters/6-advanced-functions/new-function.md)
 - Планирование: setTimeout и setInterval - Scheduling: setTimeout and
   setInterval [settimeout-setinterval](chapters/6-advanced-functions/settimeout-setinterval.md)
-  || [code](codes/advanced-function/_8-settimeout-setinterval.ts)
+  || [code](codes/6-advanced-function/_8-settimeout-setinterval.ts)
 - Декораторы и переадресация вызова, call/apply - Decorators and forwarding,
   call/apply [call-apply-decorators](chapters/6-advanced-functions/call-apply-decorators.md)
-  || [code](codes/advanced-function/_9-call-apply-decorators.ts)
+  || [code](codes/6-advanced-function/_9-call-apply-decorators.ts)
 - Привязка контекста к функции - Function binding [bind](chapters/6-advanced-functions/bind.md)
-  || [code](codes/advanced-function/_10-bind.ts)
+  || [code](codes/6-advanced-function/_10-bind.ts)
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/6-advanced-functions/)
 
 ### Свойства объекта, их конфигурация(Object properties configuration)
 
 - Флаги и дескрипторы свойств - Property flags and
   descriptors [property-descriptors](chapters/7-object-properties/1-property-descriptors.md)
-  || [code](codes/object-properties/_1-property-descriptors.ts)
+  || [code](codes/7-object-properties/_1-property-descriptors.ts)
 - Свойства - геттеры и сеттеры -Property getters and
   setters [property-descriptors](chapters/7-object-properties/1-property-descriptors.md)
-  || [code](codes/object-properties/_1-property-descriptors.ts)
+  || [code](codes/7-object-properties/_1-property-descriptors.ts)
 
 ### Прототипы, наследование(Prototypes, inheritance)
 

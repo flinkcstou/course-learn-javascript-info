@@ -1,4 +1,4 @@
-export class NativePrototypes {
+export class _3NativePrototypes {
   constructor() {
     // this.method1();
     // this.method2();

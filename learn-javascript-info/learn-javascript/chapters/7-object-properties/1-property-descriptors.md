@@ -11,7 +11,7 @@ https://learn.javascript.ru/property-descriptors
     - das
 
 - `codes`
-    - [code](../../codes/object-properties/_1-property-descriptors.ts)
+    - [code](../../codes/7-object-properties/_1-property-descriptors.ts)
 
 - `about`
     - Лучше с нуля прочитать из сайта и решить задачки
