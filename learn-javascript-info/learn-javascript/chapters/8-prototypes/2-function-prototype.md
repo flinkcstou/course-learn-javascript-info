@@ -11,6 +11,10 @@ https://learn.javascript.ru/function-prototype
 - `code`
     - [code](../../codes/8-prototypes/_2-function-prototype.ts)
 
+- `extra task`
+    - Чем отличается вызов `f()` от объекта созданного `new f()`, в чем разница `[[Prototype]]`, `prototype`
+      ,  `Function.prototype`, `f.prototype` ?
+
 - `prototype`
     - у функции(`function`) есть дефолтное свойство(`property`) - `prototype`
     - `prototype` равен `{constructor: f}`

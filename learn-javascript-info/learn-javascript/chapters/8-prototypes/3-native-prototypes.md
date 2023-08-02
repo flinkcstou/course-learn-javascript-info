@@ -10,6 +10,9 @@ https://learn.javascript.ru/native-prototypes
 - `code`
     - [code](../../codes/8-prototypes/_3-native-prototypes.ts)
 
+- `extra task`
+    - Написать разницу между `this`, `f.prototype` и `f[property]` в new f();_
+
 #### Есть три способа скопировать методы
 
 1) obj.join = Array.prototype.join;
