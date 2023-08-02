@@ -7,6 +7,9 @@ https://learn.javascript.ru/native-prototypes
 - `definition`
     - fdf
 
+- `code`
+    - [code](../../codes/8-prototypes/_3-native-prototypes.ts)
+
 #### Есть три способа скопировать методы
 
 1) obj.join = Array.prototype.join;

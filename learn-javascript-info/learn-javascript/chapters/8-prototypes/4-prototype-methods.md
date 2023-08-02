@@ -2,7 +2,8 @@
 
 https://learn.javascript.ru/prototype-methods
 
-
+- `code`
+    - [code](../../codes/8-prototypes/_4-prototype-methods.ts)
 
 ### Методы прототипов, объекты без свойства __proto__
 

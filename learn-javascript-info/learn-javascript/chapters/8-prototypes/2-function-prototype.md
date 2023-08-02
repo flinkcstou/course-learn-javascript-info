@@ -8,6 +8,9 @@ https://learn.javascript.ru/function-prototype
 - `definition`
     - fds
 
+- `code`
+    - [code](../../codes/8-prototypes/_2-function-prototype.ts)
+
 - `prototype`
     - у функции(`function`) есть дефолтное свойство(`property`) - `prototype`
     - `prototype` равен `{constructor: f}`

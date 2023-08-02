@@ -3,13 +3,17 @@
 https://learn.javascript.ru/prototype-inheritance
 
 - `terminology`
-    - dsafsa
+    - обычное свойство - regular property
+    - наследование - inheritance
 
 - `definition`
     - dfsd
 
 - `external link`
     - https://www.patterns.dev/posts/prototype-pattern
+
+- `code`
+    - [code](../../codes/8-prototypes/_1-prototype-inheritance.ts)
 
 **javascript реализован через прототипное наследования**
 
@@ -39,8 +43,6 @@ https://learn.javascript.ru/prototype-inheritance
 3. `obj.hasOwnProperty(key)` это проверка есть ли точно свойства(property) у объекта
 4. `for(let prop in obj)` пробегается по свойствам объекта и по свойствам [[Prototype]]. Если у свойства(property) стоит
    дескриптор(descriptors)(enumerable=false), то не будет пробегаться по этим свойствам
-
-
 
 **Пример**
 
