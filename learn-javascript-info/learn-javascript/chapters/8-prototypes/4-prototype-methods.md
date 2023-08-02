@@ -5,7 +5,8 @@ https://learn.javascript.ru/prototype-methods
 - `code`
     - [code](../../codes/8-prototypes/_4-prototype-methods.ts)
 
-### Методы прототипов, объекты без свойства __proto__
+- `about`
+    - доработать еще раз
 
 > Object.create(proto, [descriptors]) – создаёт пустой объект со свойством [[Prototype]], указанным как proto, и
 > необязательными дескрипторами свойств descriptors.
