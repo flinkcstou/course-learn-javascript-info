@@ -108,11 +108,11 @@ export class _1PrototypeInheritance {
         h: 11
       },
       set fullName(value: any) {
+        [this.name]= [value]
         console.error(value);
       },
       walk() {
         console.error(this);
-        /* этот метод не будет использоваться в rabbit */
       }
     };
 

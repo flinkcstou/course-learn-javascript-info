@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-import { _1ObjectBasics } from '../../learn-javascript-info/learn-javascript/codes/4-object-basics/_1-object-basics';
-import { _1DataTypes } from '../../learn-javascript-info/learn-javascript/codes/5-data-types/_1-data-types';
-import {
-  _1AdvancedFunction
-} from '../../learn-javascript-info/learn-javascript/codes/6-advanced-function/_1-advanced-function';
+import { _0Prototypes } from '../../learn-javascript-info/learn-javascript/codes/8-prototypes/_0-prototypes';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +12,8 @@ export class AppComponent {
   constructor() {
     // new _1ObjectBasics();
     // new _1DataTypes();
-    new _1AdvancedFunction();
+    // new _1AdvancedFunction();
+    new _0Prototypes();
   }
 
 }
