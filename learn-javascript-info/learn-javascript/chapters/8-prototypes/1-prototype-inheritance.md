@@ -11,7 +11,7 @@ https://learn.javascript.ru/prototype-inheritance
 - `external link`
     - https://www.patterns.dev/posts/prototype-pattern
 
-javascript реализован через прототипное наследования
+**javascript реализован через прототипное наследования**
 
 1. у каждого объекта есть свойство **__ proto __** = **[[Prototype]]**
 2. При создания объекта через **{}**, его **__ proto __** равен **Object.prototype**

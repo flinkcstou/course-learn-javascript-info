@@ -93,13 +93,18 @@ let str = new Boolean(true)
 function Object() {
   // где то под капотом js движка
   let prototype = {constructor: Object, __proto__: null}
+  prototype.toString = function () {
+  }
   Object.prototype = prototype
+
 }
 
 // 2) Array.prototype
 function Array() {
   // где то под капотом js движка
   let prototype = {constructor: Array, __proto__: Object.prototype}
+  prototype.toString = function () {
+  }
   Array.prototype = prototype
 }
 
@@ -107,6 +112,8 @@ function Array() {
 function String() {
   // где то под капотом js движка
   let prototype = {constructor: String, __proto__: Object.prototype}
+  prototype.toString = function () {
+  }
   String.prototype = prototype
 }
 
@@ -118,13 +125,17 @@ function Function() {
 
   prototype.constructor = Function;
   prototype.__proto__ = Object.prototype;
+  prototype.toString = function () {
+  }
+  prototype.call = function () {
+  }
   Function.prototype = prototype
 }
 
 
 ```
 
-**как работает, как взаимосвязаны [[Prototytpe]] и prototype системно через js движок**
+**как работает, как взаимосвязаны [[Prototype]] и prototype системно через js движок**
 
 ```js
 function f() {
@@ -221,3 +232,16 @@ Object.defineProperty({}, '__proto__', {
 })
 
 ```
+
+- Чем отличается вызов `f()` от объекта созданного `new f()`, в чем разница `[[Prototype]]`, `prototype`
+  ,  `Function.prototype`, `f.prototype` ?
+    - ...
+    - при вызове `f()` происходит создания обычной функции и тогда
+      для `function f(){}`  `f[[Prototype]] || (f.__proto__)`
+      равен `Function.prototype`
+    - при вызове  `let a = new f()` происходит создания нового объекта и тогда для
+      объекта `a[[Prototype]] || (a.__proto__)` равен `f.prototype`
+    - Есть функции Object, Function, Array, Map итд. У всех у них переписаны свойства prototype но при создания обычной
+      функции function f(){} prototype равен ConstructorPrototype = {constructor:f} и дальше если мы хотим изменить мы
+      можем сами поменять prototype также как и у встроенных функции Object, Function, Array, Map итд. обычно встроенный
+      prototype ConstructorPrototype переписывают если мы хотим через функцию создать новый объект -> new f()
