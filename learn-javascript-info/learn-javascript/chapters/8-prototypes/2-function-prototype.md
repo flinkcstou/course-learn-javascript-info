@@ -14,6 +14,7 @@ https://learn.javascript.ru/function-prototype
 - `extra task`
     - Чем отличается вызов `f()` от объекта созданного `new f()`, в чем разница `[[Prototype]]`, `prototype`
       ,  `Function.prototype`, `f.prototype` ?
+    - Чем отличается `function f (){}` от `function f(){}; new f()`
 
 - `prototype`
     - у функции(`function`) есть дефолтное свойство(`property`) - `prototype`
@@ -256,3 +257,18 @@ obj.__proto__ = Object.prototype
       обычной функции `function f(){}` `prototype` равен `prototype` = {constructor:f} и дальше если мы хотим изменить
       мы можем сами поменять `prototype`. Также, как и у встроенных функции Object, Function, Array, Map итд. обычно
       встроенный `prototype` переписывают если мы хотим через функцию создать новый объект -> `new f()`
+
+
+- Чем отличается `function f (){}` от `function f(){}; new f()`
+- `function f(){}`
+    - has local variable(any data type)
+    - has property(any data type)
+    - has __proto__ = Function.prototype
+    - has prototype = f.prototype
+- `function f(){}; new f()`
+    - function has local variable(any data type)
+    - function has property(any data type)
+    - function has __proto__ Function.prototype
+    - function has prototype = f.prototype
+    - has created variable "this"
+    - variable "this" has __proto__ = f.prototype
