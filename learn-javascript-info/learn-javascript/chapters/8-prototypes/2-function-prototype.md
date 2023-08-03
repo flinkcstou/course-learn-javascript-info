@@ -112,6 +112,8 @@ function Array() {
   let prototype = {constructor: Array, __proto__: Object.prototype}
   prototype.toString = function () {
   }
+  prototype.slice = function () {
+  }
   Array.prototype = prototype
 }
 
@@ -228,8 +230,9 @@ let instanceF = new f();
 **Как реализован `__proto__`  внутри движка js**
 
 ```js
-
-Object.defineProperty({}, '__proto__', {
+let obj = {}
+// где то пот капотом js для каждого созданного объекта происходит такая магия 
+Object.defineProperty(obj, '__proto__', {
   get() {
     return this[[Prototype]]
   },
@@ -237,6 +240,7 @@ Object.defineProperty({}, '__proto__', {
     this[[Prototype]] = value
   }
 })
+obj.__proto__ = Object.prototype
 
 ```
 
@@ -248,7 +252,7 @@ Object.defineProperty({}, '__proto__', {
       равен `Function.prototype`
     - при вызове  `let a = new f()` происходит создания нового объекта и тогда для
       объекта `a[[Prototype]] || (a.__proto__)` равен `f.prototype`
-    - Есть функции Object, Function, Array, Map итд. У всех у них переписаны свойства prototype но при создания обычной
-      функции function f(){} prototype равен ConstructorPrototype = {constructor:f} и дальше если мы хотим изменить мы
-      можем сами поменять prototype также как и у встроенных функции Object, Function, Array, Map итд. обычно встроенный
-      prototype ConstructorPrototype переписывают если мы хотим через функцию создать новый объект -> new f()
+    - Есть функции Object, Function, Array, Map итд. У всех у них переписаны свойства `prototype` но при создания
+      обычной функции `function f(){}` `prototype` равен `prototype` = {constructor:f} и дальше если мы хотим изменить
+      мы можем сами поменять `prototype`. Также, как и у встроенных функции Object, Function, Array, Map итд. обычно
+      встроенный `prototype` переписывают если мы хотим через функцию создать новый объект -> `new f()`
