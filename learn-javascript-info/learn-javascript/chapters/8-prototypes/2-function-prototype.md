@@ -251,6 +251,7 @@ obj.__proto__ = Object.prototype
     - при вызове `f()` происходит создания обычной функции и тогда
       для `function f(){}`  `f[[Prototype]] || (f.__proto__)`
       равен `Function.prototype`
+    - как б функция потом выглядело под капотом js `let f = new Function('body'); f[[Prototype]] = Function.prototype`
     - при вызове  `let a = new f()` происходит создания нового объекта и тогда для
       объекта `a[[Prototype]] || (a.__proto__)` равен `f.prototype`
     - Есть функции Object, Function, Array, Map итд. У всех у них переписаны свойства `prototype` но при создания
@@ -258,9 +259,20 @@ obj.__proto__ = Object.prototype
       мы можем сами поменять `prototype`. Также, как и у встроенных функции Object, Function, Array, Map итд. обычно
       встроенный `prototype` переписывают если мы хотим через функцию создать новый объект -> `new f()`
 
+- Почему происходит путаница, когда речь идет о `[[Prototype]]` `__proto__` и о `prototype` связанный с обычной
+  функцией `function f(){}`
+    - функция это и есть объект нужно просто привыкнуть воспринимать как `супер объект` который просто имеет
+      тело(`function body`), где
+      можно код написать и вызвать его(`f()`), а все остальное это объект
+    - если объект может наследоваться от другого объекта через `__proto__` `[[Prototype]]`
+    - также функция(`супер объект`) может наследоваться от другой функции через `__proto__` `[[Prototype]]`
+    - это означает что функция наследованная от другой будет иметь доступ до свойств другой функции, выходит что
+      работает так же как и объект
+    - `Object.setPrototypeOf(f, fExtends)`
 
-- Чем отличается `function f (){}` от `function f(){}; new f()`
-- `function f(){}`
+
+- Чем отличается `function f (){} f()` от `function f(){}; new f()`
+- `function f(){} f()`
     - has local variable(any data type)
     - has property(any data type)
     - has __proto__ = Function.prototype

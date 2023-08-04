@@ -1,4 +1,4 @@
-### Класс: базовый синтаксис
+### Класс: базовый синтаксис(Class basic syntax)
 
 - `terminology`
     - da
@@ -6,6 +6,9 @@
 - `definition`
     - fsd
 
+- `code`
+    - [code](../../codes/9-classes/_1-class.ts)
+    -
 - `extra task`
     - Чем отличается `new f()` от `new C()`
 

@@ -1,4 +1,4 @@
-export class ClassInheritance {
+export class _2ClassInheritance {
 
   constructor() {
 
