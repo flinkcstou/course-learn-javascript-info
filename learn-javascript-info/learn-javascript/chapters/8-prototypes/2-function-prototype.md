@@ -104,6 +104,8 @@ function Object() {
   prototype.toString = function () {
   }
   Object.prototype = prototype
+  Object.__proto__ = Function.prototype
+
 
 }
 
@@ -116,6 +118,8 @@ function Array() {
   prototype.slice = function () {
   }
   Array.prototype = prototype
+  Array.__proto__ = Function.prototype
+
 }
 
 // 3) String.prototype
@@ -125,6 +129,7 @@ function String() {
   prototype.toString = function () {
   }
   String.prototype = prototype
+  String.__proto__ = Function.prototype
 }
 
 // 4) Function.prototype
@@ -140,6 +145,7 @@ function Function() {
   prototype.call = function () {
   }
   Function.prototype = prototype
+  Function.__proto__ = Function.prototype
 }
 
 
