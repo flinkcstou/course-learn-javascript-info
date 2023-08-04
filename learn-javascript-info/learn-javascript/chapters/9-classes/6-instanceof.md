@@ -3,6 +3,8 @@
 - `syntax`
     - `obj instanceof Class`
 
+- `extra task`
+    - что происходит под капотом js для `Function` с `Function.prototype` а также `Object.prototype`
 
 - Оператор вернёт `true`, если `obj` принадлежит классу `Class` или наследующему от него.
 
@@ -36,7 +38,20 @@ function Function() {
 
   Function.prototype = prototype
   Function.__proto__ = Function.prototype
+
+  // let this = {}
+  // this.__proto__ = Function.prototyp
+  // this.name =''
+  // this.length
 }
+
+// тоже самое 
+function f() {
+  // body
+}
+
+// тоже самое 
+let f = new Function(/*body*/)
 
 
 function f() {
