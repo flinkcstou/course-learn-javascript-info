@@ -11,7 +11,6 @@ export class _2ClassInheritance {
   method4() {
 
 
-
     // @ts-ignore
     class Rabbit extends Array {
 
