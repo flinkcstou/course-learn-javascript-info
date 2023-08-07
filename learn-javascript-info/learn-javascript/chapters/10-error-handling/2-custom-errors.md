@@ -22,12 +22,12 @@ https://learn.javascript.ru/custom-errors
   инициализацией
 - `ReferenceError` переводится как ссылаться, значит логический можно понять что раз нет ссылки до чего-то, до
   переменной, это ошибка `ReferenceError`
-- `ReferenceError` также это будет работать если мы хотим к чему то ссылаться но это невозможно сделать, это
+- `ReferenceError` также это будет работать если мы хотим к чему то ссылаться, но это невозможно сделать, это
   операция `assignment`. Хотим вызванную функцию к чему то приравнять.
 
 - `SyntexError` - представляет ошибку, возникающую при попытке интерпретировать синтаксически неправильный код.
 - `SyntexError` когда мы написали не рабочий код. то есть забыли где скобку, фигурную скобку(braces), кавычки(quotes)
-- `SyntexError` когда мы пере объявляем переменную
+- `SyntexError` когда мы пере объявляем переменную, это тоже синтаксический неправильно. 
 
 - `TypeError` occurs when the value of a function or a variable is of an unexpected type.
 - `TypeError`: This error occurs when a value is not of the expected type.
@@ -76,6 +76,77 @@ try {
   console.error(err.stack); // список вложенных вызовов с номерами строк для каждого
 }
 ```
+
+
+- Создаем класс, который будет хранить в себе типы ошибок, и мы хотим отработать их, а остальные оставить как есть
+
+```js
+class MyError extends Error {
+  // здесь мы создали свой кастомный Error который автоматом будет проставлять свойства `name`
+  constructor(message) {
+    super(message)
+    this.name = this.constructor.name
+  }
+}
+
+
+class ErrorUser extends MyError {
+  // здесь мы создали класс который будет принимать вторым аргументом cause.
+  // Cause это тип Error. когда мы ошибку отлавливаем мы выкидываем нашу кастомную ошибку 
+  // throw new ErrorUser('some message', err),
+  // выходит что внутри ErrorUser будет лежать как свойства оригинальная ошибка
+  constructor(message, cause) {
+    super(message)
+    this.cause = cause
+  }
+}
+
+class ValidationError extends MyError {
+}
+
+class PropertyRequiredError extends ValidationError {
+  // здесь мы создали класс который будет выкидывать ошибку если мы понимем что свойства отсутсвует
+  constructor(property) {
+    super("Нет свойства: " + property);
+    this.property = property;
+  }
+}
+
+function readUser() {
+  let data = {}
+  try {
+    JSON.parse(data)
+
+    if (!data.name) throw new PropertyRequiredError('name')
+
+  } catch (e) {
+    if (e instanceof SyntaxError) {
+      throw new ErrorUser('syntax error', e)
+    }
+    if (e instanceof ReferenceError) {
+      throw new ErrorUser('Reference error', e)
+    }
+
+    throw e
+  }
+}
+
+try {
+  readUser()
+} catch (e) {
+  if (e instanceof ErrorUser) {
+    // мы знаем что нам делать с этими ошибками
+  }
+  // а с отальными ошибками мы не знаем что делать, зато мы в будущем можем добавить проверку на новую ошибку 
+  throw e
+}
+
+
+
+
+
+```
+
 
 ```js
 /* 
@@ -185,75 +256,6 @@ try {
 } catch (err) {
   console.error(`Ошибка запуска: ${err.name}, подробности:\n${err.message}\nсодержание поля stack:\n${err.stack}`);
 }
-
-
-```
-
-- Создаем класс, который будет хранить в себе все типы ошибок, мы хотим отработать их, а остальные оставить как есть
-
-```js
-class MyError extends Error {
-  // здесь мы создали свой кастомный Error который автоматом будет проставлять свойства `name`
-  constructor(message) {
-    super(message)
-    this.name = this.constructor.name
-  }
-}
-
-
-class ErrorUser extends MyError {
-  // здесь мы создали класс который будет принимать вторым аргументом cause.
-  // Cause это тип Error. когда мы ошибку отлавливаем мы выкидываем нашу кастомную ошибку 
-  // throw new ErrorUser('some message', err),
-  // выходит что внутри ErrorUser будет лежать как свойства оригинальная ошибка
-  constructor(message, cause) {
-    super(message)
-    this.cause = cause
-  }
-}
-
-class ValidationError extends MyError {
-}
-
-class PropertyRequiredError extends ValidationError {
-  // здесь мы создали класс который будет выкидывать ошибку если мы понимем что свойства отсутсвует
-  constructor(property) {
-    super("Нет свойства: " + property);
-    this.property = property;
-  }
-}
-
-function readUser() {
-  let data = {}
-  try {
-    JSON.parse(data)
-
-    if (!data.name) throw new PropertyRequiredError('name')
-
-  } catch (e) {
-    if (e instanceof SyntaxError) {
-      throw new ErrorUser('syntax error', e)
-    }
-    if (e instanceof ReferenceError) {
-      throw new ErrorUser('Reference error', e)
-    }
-
-    throw e
-  }
-}
-
-try {
-  readUser()
-} catch (e) {
-  if (e instanceof ErrorUser) {
-    // мы знаем что нам делать с этими ошибками
-  }
-  // а с отальными ошибками мы не знаем что делать, зато мы в будущем можем добавить проверку на новую ошибку 
-  throw e
-}
-
-
-
 
 
 ```
