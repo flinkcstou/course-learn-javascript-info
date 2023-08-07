@@ -7,3 +7,6 @@
 
 - `definition`
     - error-first callback - когда функция имеет аргумент и первый аргумент записывается ошибка
+
+- `external link`
+    - https://www.youtube.com/watch?v=sB-KTgAhZUQ&ab_channel=IT-KAMASUTRA
