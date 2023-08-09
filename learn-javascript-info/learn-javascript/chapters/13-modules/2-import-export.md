@@ -5,6 +5,7 @@
 - что такое `import` ?
     - Gозволяет импортировать функциональность из других модулей.
 - что такое `re-export` ?
+    - по другому это называется `import-export`
     - Это когда делаем одновременно `export` and `import`. В основном используется в файлах как `index.ts` `index.js`,
       где мы не хотим отдельно импортировать в `index file` а потом на следующей строке делать `export`
 
@@ -21,7 +22,7 @@
     - `import * as obj from "module"`
     - Импорт по умолчанию(default)
     - `import x from "module"`
-    - import {default as x} from "module"
+    - `import {default as x} from "module"`
 - как делать `re-export`
     - обычный способ `re-export-a`
     - `export {x [as y], ...} from "module"`
