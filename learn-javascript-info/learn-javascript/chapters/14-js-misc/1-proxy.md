@@ -52,6 +52,8 @@ let proxy = new Proxy(target, handler);
 target = new Proxy(target, handler);
 ```
 
+![img.png](../../../assets/how-to-work-proxy.png)
+
 - `Reflect` – встроенный объект, упрощающий создание прокси.
 
 - `Reflect` методы
