@@ -50,7 +50,7 @@ hi(); // this = undefinded
 - `reference-type` это есть противоположность  `lexical environment`
 
 
-- `lexical environment` - [lexical-environment](../6-advanced-functions/closure.md)
+- `lexical environment` - [lexical-environment](../6-advanced-functions/3-closure.md)
 - `lexical environment` - определяется в момент объявления, то есть когда инициализируем классы\функции\переменные
 - `lexical-environment` содержит в себе:
     - все объявления переменных контекста

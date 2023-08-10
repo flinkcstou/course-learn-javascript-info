@@ -6,7 +6,7 @@ export class CounterJs {
   }
 
   method1() {
-    // closure.md
+    // 3-closure.md
     function Counter() {
       let count = 0;
 
