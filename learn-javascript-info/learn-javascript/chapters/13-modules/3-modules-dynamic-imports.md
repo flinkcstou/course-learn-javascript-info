@@ -18,4 +18,5 @@
 
 ```js
 let modulePath = prompt("Какой модуль загружать?");
+import(modulePath).then(module => module.exportVar)
 ```

@@ -79,7 +79,7 @@
 - Декораторы и переадресация вызова, call/apply - Decorators and forwarding,
   call/apply [call-apply-decorators](chapters/6-advanced-functions/call-apply-decorators.md)
   || [code](codes/6-advanced-function/_9-call-apply-decorators.ts)
-- Привязка контекста к функции - Function binding [bind](chapters/6-advanced-functions/bind.md)
+- Привязка контекста к функции - Function binding [bind](chapters/6-advanced-functions/****bind.md)
   || [code](codes/6-advanced-function/_10-bind.ts)
 - Повторяем стрелочные функции - Arrow functions revisited [](chapters/6-advanced-functions/)
 
@@ -96,19 +96,66 @@
 
 - Прототипное наследование - Prototypal
   inheritance [prototype-inheritance](chapters/8-prototypes/1-prototype-inheritance.md)
+  || [code](codes/8-prototypes/_1-prototype-inheritance.ts)
 - F.prototype - F.prototype [function-prototype](chapters/8-prototypes/2-function-prototype.md)
+  || [code](codes/8-prototypes/_3-native-prototypes.ts)
 - Встроенные прототипы - Native prototypes [native-prototypes](chapters/8-prototypes/3-native-prototypes.md)
+  || [code](codes/8-prototypes/_3-native-prototypes.ts)
 - Методы прототипов, объекты без свойства __proto__ - Prototype methods, objects without __
   proto__ [prototype-methods](chapters/8-prototypes/4-prototype-methods.md)
+  || [code](codes/8-prototypes/_4-prototype-methods.ts)
 
 ### Классы (Classes)
 
 - Класс: базовый синтаксис - Class basic syntax [class](chapters/9-classes/1-class.md)
-- Наследование классов - Class inheritance [](chapters/9-classes/)
-- Статические свойства и методы - Static properties and methods [](chapters/9-classes/)
+  || [code](codes/9-classes/_1-class.ts)
+- Наследование классов - Class inheritance [class-inheritance](chapters/9-classes/2-class-inheritance.md)
+  || [code](codes/9-classes/_2-class-inheritance.ts)
+- Статические свойства и методы - Static properties and
+  methods [static-properties.methods](chapters/9-classes/3-static-properties.methods.md)
 - Приватные и защищённые методы и свойства - Private and protected properties and methods [](chapters/9-classes/)
-- Расширение встроенных классов - Extending built-in classes [](chapters/9-classes/)
-- Проверка класса: "instanceof" - Class checking: "instanceof" [](chapters/9-classes/)
-- Примеси - Mixins [](chapters/9-classes/)
+- Расширение встроенных классов - Extending built-in classes [extend-natives](chapters/9-classes/5-extend-natives.md)
+- Проверка класса: "instanceof" - Class checking: "instanceof" [instanceof](chapters/9-classes/6-instanceof.md)
+- Примеси - Mixins [mixins](chapters/9-classes/7-mixins.md)
 
+### Обработка ошибок
 
+- Обработка ошибок, "try..catch" - Error handling, "try...catch" [try-catch](chapters/10-error-handling/1-try-catch.md)
+- Пользовательские ошибки, расширение Error - Custom errors, extending
+  Error  [custom-errors](chapters/10-error-handling/2-custom-errors.md)
+
+### Промисы, async/await
+
+- Введение: колбэки - Introduction: callbacks [callbacks](chapters/11-async/1-callbacks.md)
+- Промисы - Promise [promise-basics](chapters/11-async/2-promise-basics.md)
+- Цепочка промисов - Promises chaining [promise-chaining](chapters/11-async/3-promise-chaining.md)
+- Промисы: обработка ошибок - Error handling with promises [](chapters/11-async/)
+- Promise API - Promise API [promise-api](chapters/11-async/5-promise-api.md)
+- Промисификация - Promisification [promisify](chapters/11-async/6-promisify.md)
+- Микрозадачи - Microtasks [](chapters/11-async/)
+- Async/await - Async/await [async-await](chapters/11-async/8-async-await.md)
+
+### Генераторы, продвинутая итерация
+
+- Генераторы - Generators
+- Асинхронные итераторы и генераторы - Async iteration and generators
+
+### Модули(Modules)
+
+- Модули, введение - Modules, introduction [modules-intro](chapters/13-modules/1-modules-intro.md)
+  || [code](codes/13-modules/modules-js)
+- Экспорт и импорт - Export and Import [import-export](chapters/13-modules/2-import-export.md)
+  || [code](codes/13-modules/modules-js)
+- Динамические импорты - Dynamic imports [modules-dynamic-imports](chapters/13-modules/3-modules-dynamic-imports.md)
+  || [code](codes/13-modules/modules-js)
+
+### Разное
+
+- Proxy и Reflect - Proxy and Reflect [](chapters/14-js-misc/)
+- Eval: выполнение строки кода - Eval: run a code string [eval](chapters/14-js-misc/2-eval.md)
+- Каррирование - Currying [](chapters/14-js-misc/)
+- Ссылочный тип - Reference Type [reference-type](chapters/14-js-misc/4-reference-type.md)
+- Побитовые операторы - Bitwise operators [bitwise-operators](chapters/14-js-misc/5-bitwise-operators.md)
+- BigInt - BigInt [bigint](chapters/14-js-misc/6-bigint.md)
+- Юникод, внутреннее устройство строк - Unicode, String internals [unicode](chapters/14-js-misc/7-unicode.md)
+- Intl: интернационализация в JavaScript - Intl [intl](chapters/14-js-misc/8-intl.md)
