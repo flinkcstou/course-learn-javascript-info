@@ -8,6 +8,9 @@ https://learn.javascript.ru/currying-partials
 - `Currying` – это трансформация, которая превращает вызов f(a, b, c) в f(a)(b)(c). В JavaScript реализация обычно
   позволяет вызывать функцию обоими вариантами: либо нормально, либо возвращает частично применённую функцию, если
   количество аргументов недостаточно.
+- `Currying` – это трансформация функций таким образом, чтобы они принимали аргументы не как `f(a, b, c)`, а
+  как `f(a)(b)(c)`.
+
 
 - Продвинутая реализация каррирования(Currying)
 
@@ -42,13 +45,13 @@ console.error(curriedSum(1)(2)(3)); // 6, каррирование всех ар
 
 ```js
 function sum(...x) {
-    let s = x.reduce((sum, current) => sum + current, 0);
-    sum.n = s;
-    
-    return (...y) => {
-        s += y.reduce((sum, current) => sum + current, 0);
-        return sum(s);
-    };
+  let s = x.reduce((sum, current) => sum + current, 0);
+  sum.n = s;
+
+  return (...y) => {
+    s += y.reduce((sum, current) => sum + current, 0);
+    return sum(s);
+  };
 }
 
 ```
