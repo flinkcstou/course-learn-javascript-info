@@ -5,6 +5,12 @@ https://learn.javascript.ru/proxy
 - `about`
     - Лучше с нуля прочитать из сайта и решить задачки
 
+- `codes`
+    - [code](../../codes/14-js-misc/_1-proxy.ts)
+
+- `external link`
+    - https://dev.to/rajeshroyal/what-is-the-use-of-proxy-and-reflect-in-javascript-1a02
+
 
 - Объект `Proxy` «оборачивается» вокруг другого объекта и может перехватывать (и, при желании, самостоятельно
   обрабатывать) разные действия с ним, например чтение/запись(read, write) свойств(property) и другие. Далее мы будем
