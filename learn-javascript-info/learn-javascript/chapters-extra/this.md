@@ -3,6 +3,7 @@
     - constructor.md
     - reference-type.md
     - https://habr.com/ru/post/464163/
+    - https://habr.com/ru/articles/468943/
     - как работает под капотом this
     - _9-call-apply-decorators.ts // method3 method4 method5
     - this это не есть lexical environment и нужно написать сделать разницу между ними
@@ -15,3 +16,5 @@
     - нужно указать в чем разница создания объекта через  `new f()` а также в чем отличие свойства prototype
     - нужно понять как работает this внутри функции также f[property] также f[prototype] также создания вложенных
       функции 
+
+    
