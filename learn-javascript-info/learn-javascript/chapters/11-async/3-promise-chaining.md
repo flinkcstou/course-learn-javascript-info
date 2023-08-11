@@ -12,6 +12,9 @@ https://learn.javascript.ru/promise-chaining
     - custom implement of Promise class
     - custom implement of Promise.resolve https://stasonmars.ru/javascript/promisy-v-javascript-dlya-chainikov/
 
+- `external-link`
+    - https://www.youtube.com/watch?v=SQMCtWnCxEA&list=PLqKQF2ojwm3lPphwTfhT3ffqZbfkv07qt&index=2&ab_channel=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BB%D0%B5%D0%BD%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD
+
 - `unhandledrejection` специальное событие который вызывается если мы не обрабатываем ошибки в промисе. то есть если мы
   глотаем ошибки в промисе то их можно отловить через
   событие `unhandledrejection` `window.addEventListener('unhandledrejection', (event)=>{})`

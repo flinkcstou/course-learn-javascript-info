@@ -11,9 +11,12 @@ https://learn.javascript.ru/rest-parameters-spread-operator
       параметры и положи их в массив».
     - `Оператор расширения` он просто пробегается по итерируемому объекту
 
+- `external link`
+    - https://www.youtube.com/watch?v=SGeQ-U0G7dE&list=PLqKQF2ojwm3l4oPjsB9chrJmlhZ-zOzWT&index=15&ab_channel=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BB%D0%B5%D0%BD%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD
 
 - если троеточие `...` стоит с левой стороны от оператора приравнивания(assignment `=`) то это `rest parameter`. А если
   с правой стороны, то это `spread syntax`
+- если запись идет в переменную, то это `rest parameter`. Если читают из переменной, то это `spread syntax`
 
 ```js
 
@@ -21,7 +24,9 @@ https://learn.javascript.ru/rest-parameters-spread-operator
 
 let {a, ...rest} = {a: 'asdsa', b: 'sdfsd', c: 'fsdfds'} // rest.b, rest.c
 let [name, lastName, ...rest] = ['sdfdsf', 'fdsfds', 'fdsfsd', 'fsdfs']
-function logs(...rest) {}
+
+function logs(...rest) {
+}
 
 
 //spread syntax 
@@ -32,7 +37,6 @@ logs(...a)
 
 
 ```
-
 
 - **spread syntax `...` works with any object which has `iterator`**
 - Посмотрим, что происходит. Под капотом оператор расширения использует итераторы, чтобы перебирать элементы. Так же,

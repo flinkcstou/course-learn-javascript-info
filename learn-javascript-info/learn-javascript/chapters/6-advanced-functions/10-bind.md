@@ -11,6 +11,7 @@
 
 - `external link`
     - https://www.youtube.com/watch?v=UGapN-hrekw&ab_channel=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BB%D0%B5%D0%BD%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD
+    - https://www.youtube.com/watch?v=fJqYa3BuwaU&list=PLqKQF2ojwm3lPphwTfhT3ffqZbfkv07qt&ab_channel=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BB%D0%B5%D0%BD%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD
 
 
 - Обычно bind применяется для фиксации this в методе объекта, чтобы передать его в качестве колбэка. Например, для

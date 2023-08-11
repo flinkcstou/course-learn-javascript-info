@@ -11,6 +11,8 @@ https://learn.javascript.ru/proxy
 
 - `external link`
     - https://dev.to/rajeshroyal/what-is-the-use-of-proxy-and-reflect-in-javascript-1a02
+    - https://www.youtube.com/watch?v=np08WdS9OXg&list=PLqKQF2ojwm3l4oPjsB9chrJmlhZ-zOzWT&index=9&ab_channel=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BB%D0%B5%D0%BD%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD
+    - https://www.youtube.com/watch?v=mSbyhHfxs04&list=PLqKQF2ojwm3l4oPjsB9chrJmlhZ-zOzWT&index=10&ab_channel=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BB%D0%B5%D0%BD%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD
 
 
 - Объект `Proxy` «оборачивается» вокруг другого объекта и может перехватывать (и, при желании, самостоятельно
