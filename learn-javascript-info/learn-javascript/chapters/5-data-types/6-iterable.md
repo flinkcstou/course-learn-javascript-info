@@ -138,7 +138,7 @@ let map = new Map();
 
 map[Symbol.iterator]() // get from prototype inheritance
 
-for (let [key, value] of map) {
+for (let [key, value] of map) { // под капотом for вызывается метод map[Symbol.iterator]()
 
 }
 

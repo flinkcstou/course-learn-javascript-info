@@ -10,7 +10,6 @@ export class _8MapSet {
 
   method3() {
     var obj = {}
-Object.entries(obj)
 
   }
 
