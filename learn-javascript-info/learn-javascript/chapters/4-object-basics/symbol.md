@@ -1,9 +1,12 @@
-### Тип данных Symbol(Symbol type) 
+### Тип данных Symbol(Symbol type)
 
 https://learn.javascript.ru/symbol
 
 - `terminology`
     - 'sdf'
+
+- `external link`
+    - https://habr.com/ru/articles/529560/
 
 Символ (symbol) – примитивный тип данных, использующийся для создания уникальных идентификаторов.
 

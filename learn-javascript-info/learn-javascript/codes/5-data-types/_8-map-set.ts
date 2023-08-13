@@ -4,6 +4,14 @@ export class _8MapSet {
   constructor() {
     this.method1();
     this.method2();
+    this.method3();
+
+  }
+
+  method3() {
+    var obj = {}
+Object.entries(obj)
+
   }
 
   method2() {
