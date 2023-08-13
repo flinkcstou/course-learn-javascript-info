@@ -1,5 +1,9 @@
 ### Все о IterableIterator
 
+- для начало прочитать [iterable](../chapters/5-data-types/6-iterable.md)
+- для начало прочитать [map-set](../chapters/5-data-types/7-map-set.md)
+- для начало прочитать [keys-values-entries](../chapters/5-data-types/9-keys-values-entries.md)
+
 ```ts
 // как реализован под капотом js
 interface Iterator<T, TReturn = any, TNext = undefined> {
@@ -101,7 +105,7 @@ var arr = Object.values(obj)
 Object.fromEntries()
 // принимает объект у которого Iterable либо ArraLike
 Array.from()
-// принимает объект у которого Iterable равен entriesObject, либо явно вызываем метод entries у структур данных она будет возвращать Iterable entriesObject
+// принимает объект у которого Iterable равен Symbol(Symbol.toStringTag) entriesObject, либо явно вызываем метод entries у структур данных она будет возвращать Iterable entriesObject
 new Map()
 // принимает объект у которого Iterable равен valuesObject, либо явно вызываем метод values у структур данных она будет возвращать Iterable valuesObject
 new Set()
@@ -138,3 +142,8 @@ function Set(iterable) {
 
 
 ```
+
+- `Map, Set, Array`, в конструктор принимает `iterable` у каждого которого должен быть своим типом. если Map то
+  принимает в конструктор Map. если Set то принимает в конструктор Set. если Array то принимает в конструктор Array.
+  Также принимает просто Array. если ни один из них то тогда должны вызывать методы `entries, keys, values` для того
+  чтоб передавать правильном виде в конструктор
