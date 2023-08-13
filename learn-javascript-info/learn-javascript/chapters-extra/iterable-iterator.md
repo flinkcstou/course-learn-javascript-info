@@ -86,10 +86,10 @@ function Object() {
 // `Object.values, Object.keys, Object.entries` возвращает Array
 
 var obj = {key: 'value'};
-var map = new Map(Object.entries(obj))
+var map = new Map(Object.entries(obj)) //Iterable entriesObject
 
-var set = new Set(Object.keys(obj));
-var set = new Set(Object.values(obj));
+var set = new Set(Object.keys(obj)); //Iterable keysObject
+var set = new Set(Object.values(obj)); //Iterable valuesObject
 
 var arr = Object.keys(obj)
 var arr = Object.values(obj)
@@ -103,10 +103,11 @@ Object.fromEntries()
 Array.from()
 // принимает объект у которого Iterable равен entriesObject, либо явно вызываем метод entries у структур данных она будет возвращать Iterable entriesObject
 new Map()
-// принимает объект у которого Iterable равен valuesObject, либо явно вызываем метод entries у структур данных она будет возвращать Iterable valuesObject
+// принимает объект у которого Iterable равен valuesObject, либо явно вызываем метод values у структур данных она будет возвращать Iterable valuesObject
 new Set()
-// принимает объект у которого Iterable равен valuesObject, либо явно вызываем метод entries у структур данных она будет возвращать Iterable valuesObject
+// принимает объект у которого Iterable равен valuesObject, либо явно вызываем метод values у структур данных она будет возвращать Iterable valuesObject
 new Array()
 
 ```
 
+- `Iterable` объект который дает возможность пробегаться по циклу `for...of`
