@@ -111,3 +111,30 @@ new Array()
 ```
 
 - `Iterable` объект который дает возможность пробегаться по циклу `for...of`
+
+- `Iterable` мощная функция которая дает возможность многим вещам реализовываться `rest parameter`, `spread syntex`
+  , `for..of`
+
+```js
+// под капотом js
+function Set(iterable) {
+  function generateSetByIterable(iterable) {
+    if (iterable.isNot(valuesObject)) {
+      throw new Error('sdfds')
+    }
+    for (let value of iterable) {
+      set.add(value)
+    }
+  }
+
+  let set = new Set()
+  if (iterable) {
+    generateSetByIterable()
+  }
+  return set
+
+}
+
+
+
+```
