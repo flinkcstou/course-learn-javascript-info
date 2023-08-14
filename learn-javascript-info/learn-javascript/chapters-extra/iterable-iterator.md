@@ -147,3 +147,28 @@ function Set(iterable) {
   принимает в конструктор Map. если Set то принимает в конструктор Set. если Array то принимает в конструктор Array.
   Также принимает просто Array. если ни один из них то тогда должны вызывать методы `entries, keys, values` для того
   чтоб передавать правильном виде в конструктор
+
+```ts
+// как реализовано под капотом js Map
+
+function Map() {
+
+  Map.prototype.entries = function() {
+    const iterator: IterableIterator<any> = {
+      [Symbol.iterator](): IterableIterator<any> {
+        return this;
+      },
+      next() {
+        return {
+          value: ['key', 'value'],
+          done: false
+        }
+      }
+
+    }
+    return iterator
+
+  }
+}
+
+```
