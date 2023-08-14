@@ -1,7 +1,7 @@
-import { _2Object } from './_2-object';
+import { _1Object } from './_1-object';
 
 export class _0ObjectBasics {
   constructor() {
-    new _2Object();
+    new _1Object();
   }
 }

@@ -1,6 +1,6 @@
-export class _2Object {
+export class _1Object {
   constructor() {
-    console.error('_2Object');
+    console.error('_1Object');
     this.method1();
 
 

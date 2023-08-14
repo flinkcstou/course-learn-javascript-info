@@ -37,7 +37,7 @@
 
 ### Объекты: основы(Objects: the basics)
 
-- Объекты - Objects [object](chapters/4-object-basics/1-object.md) || [code](codes/4-object-basics/_2-object.ts)
+- Объекты - Objects [object](chapters/4-object-basics/1-object.md) || [code](codes/4-object-basics/_1-object.ts)
 - Копирование объектов и ссылки - Object references and copying [object-copy](chapters/4-object-basics/2-object-copy.md)
 - Сборка мусора - Garbage collection [garbage-collection](chapters/4-object-basics/3-garbage-collection.md)
 - Методы объекта, "this" - Object methods, "this" [object-methods](chapters/4-object-basics/4-object-methods.md)
