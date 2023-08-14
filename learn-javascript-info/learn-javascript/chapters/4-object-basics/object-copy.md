@@ -7,6 +7,9 @@ https://learn.javascript.ru/object-copy
     - Сравнение по ссылке - comparison by reference
     - Вложенное клонирование - nested cloning
 
+- `external link`
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#creating_new_objects
+
 > Объекты не хранят значения(do not store a value), а хранят только ссылку на значения(just reference)
 
       let user = {
@@ -46,6 +49,7 @@ https://learn.javascript.ru/object-copy
 - для создания независимого объекта можем использовать метод `Object.assign`
 - для создания независимого объекта можем использовать обычный `for in` для копирования каждого свойства
 - для создания независимого объекта можем использовать `оператор расширения(spread syntax)`
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#creating_new_objects
 
   let user = { name: "John" };
   let permissions1 = { canView: true };
