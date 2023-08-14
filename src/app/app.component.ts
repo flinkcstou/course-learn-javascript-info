@@ -16,7 +16,7 @@ export class AppComponent {
   title = 'learn-javascript-info';
 
   constructor() {
-    // new _1ObjectBasics();
+    // new _0ObjectBasics();
     // new _0DataTypes();
     // new _1AdvancedFunction();
     // new _0Prototypes();
