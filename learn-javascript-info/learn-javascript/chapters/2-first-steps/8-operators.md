@@ -8,17 +8,17 @@ https://learn.javascript.ru/operators
 
 **Виды операторов и выражения языка Javascirpt (Expressions and operators)**
 
-- Операторы присваивания - Assignment operators  [LINK](operators.md)
-- Арифметические операторы - Arithmetic operators  [LINK](operators.md)
-- Битовые (поразрядные) операторы - Bitwise operators [LINK](operators.md)
-- BigInt операторы -BigInt operators [LINK](operators.md)
-- Строковые операторы - String operators [LINK](operators.md)
-- Оператор запятая - Comma operator [LINK](operators.md)
-- Унарные операторы - Unary operators [LINK](operators.md)
-- Операторы отношения - Relational operators [LINK](operators.md)
-- Операторы сравнения - Comparison operators  [LINK](comparison.md)
-- Логические операторы - Logical operators [LINK](logical-operators.md)
-- Условный (тернарный) оператор - Conditional (ternary) operator  [LINK](ifelse.md)
+- Операторы присваивания - Assignment operators  [LINK](8-operators.md)
+- Арифметические операторы - Arithmetic operators  [LINK](8-operators.md)
+- Битовые (поразрядные) операторы - Bitwise operators [LINK](8-operators.md)
+- BigInt операторы -BigInt operators [LINK](8-operators.md)
+- Строковые операторы - String operators [LINK](8-operators.md)
+- Оператор запятая - Comma operator [LINK](8-operators.md)
+- Унарные операторы - Unary operators [LINK](8-operators.md)
+- Операторы отношения - Relational operators [LINK](8-operators.md)
+- Операторы сравнения - Comparison operators  [LINK](9-comparison.md)
+- Логические операторы - Logical operators [LINK](11-logical-operators.md)
+- Условный (тернарный) оператор - Conditional (ternary) operator  [LINK](10-ifelse.md)
 
 
 - `Операнд` – то, к чему применяется оператор. Например, в умножении 5 * 2 есть два операнда: левый операнд равен 5, а

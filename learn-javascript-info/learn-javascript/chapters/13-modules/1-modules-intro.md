@@ -1,5 +1,8 @@
 ### Модули, введение(Modules, introduction)
 
+- `external link`
+    - https://www.w3schools.com/js/js_modules.asp
+
 - в js есть разные виды модулей `AMD` `CommonJs` `UMD`
 - в самом браузере тоже есть свои модули которые появились с `ECMA2015`
 

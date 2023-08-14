@@ -1,25 +1,29 @@
+### Введение(An introduction)
+
+- Введение в JavaScript - An Introduction to JavaScript [intro](chapters/1-getting-started/1-intro.md)
+
 ### Основы JavaScript(JavaScript Fundamentals)
 
-- Привет, мир! - Hello, world! [hello-world](chapters/2-first-steps/hello-world.md)
-- Структура кода - Code structure [structure](chapters/2-first-steps/structure.md)
+- Привет, мир! - Hello, world! [hello-world](chapters/2-first-steps/1-hello-world.md)
+- Структура кода - Code structure [structure](chapters/2-first-steps/2-structure.md)
 - Строгий режим — "use strict" - The modern mode, "use strict" [](chapters/2-first-steps/)
-- Переменные - Variables [variables](chapters/2-first-steps/variables.md)
-- Типы данных - Data types [types](chapters/2-first-steps/types.md)
+- Переменные - Variables [variables](chapters/2-first-steps/4-variables.md)
+- Типы данных - Data types [types](chapters/2-first-steps/5-types.md)
 - Взаимодействие: alert, prompt, confirm - Interaction: alert, prompt, confirm [](chapters/2-first-steps/)
-- Преобразование типов - Type Conversions [type-conversions](chapters/2-first-steps/type-conversions.md)
-- Базовые операторы, математика - Basic operators, maths [operators](chapters/2-first-steps/operators.md)
-- Операторы сравнения - Comparisons [comparison](chapters/2-first-steps/comparison.md)
-- Условное ветвление: if, '?' - Conditional branching: if, '?' [ifelse](chapters/2-first-steps/ifelse.md)
-- Логические операторы - Logical operators [logical-operators](chapters/2-first-steps/logical-operators.md)
+- Преобразование типов - Type Conversions [type-conversions](chapters/2-first-steps/7-type-conversions.md)
+- Базовые операторы, математика - Basic operators, maths [operators](chapters/2-first-steps/8-operators.md)
+- Операторы сравнения - Comparisons [comparison](chapters/2-first-steps/9-comparison.md)
+- Условное ветвление: if, '?' - Conditional branching: if, '?' [ifelse](chapters/2-first-steps/10-ifelse.md)
+- Логические операторы - Logical operators [logical-operators](chapters/2-first-steps/11-logical-operators.md)
 - Оператор нулевого слияния (??) - Nullish coalescing operator '
-  ??' [nullish-coalescing-operator](chapters/2-first-steps/nullish-coalescing-operator.md)
-- Циклы while и for - Loops: while and for [while-for](chapters/2-first-steps/while-for.md)
-- Конструкция "switch" - The "switch" statement [switch](chapters/2-first-steps/switch.md)
-- Функции - Functions [function-basics](chapters/2-first-steps/function-basics.md)
-- Function Expression - Function expressions [function-expressions](chapters/2-first-steps/function-expressions.md)
+  ??' [nullish-coalescing-operator](chapters/2-first-steps/12-nullish-coalescing-operator.md)
+- Циклы while и for - Loops: while and for [while-for](chapters/2-first-steps/13-while-for.md)
+- Конструкция "switch" - The "switch" statement [switch](chapters/2-first-steps/14-switch.md)
+- Функции - Functions [function-basics](chapters/2-first-steps/15-function-basics.md)
+- Function Expression - Function expressions [function-expressions](chapters/2-first-steps/16-function-expressions.md)
 - Стрелочные функции, основы - Arrow functions, the
-  basics [arrow-functions-basics](chapters/2-first-steps/arrow-functions-basics.md)
-- Особенности JavaScript - JavaScript specials [javascript-specials](chapters/2-first-steps/javascript-specials.md)
+  basics [arrow-functions-basics](chapters/2-first-steps/17-arrow-functions-basics.md)
+- Особенности JavaScript - JavaScript specials [javascript-specials](chapters/2-first-steps/18-javascript-specials.md)
 
 ### Качество кода(Code quality)
 
@@ -29,20 +33,20 @@
 - Ниндзя-код - Ninja code [](chapters/3-code-quality)
 - Автоматическое тестирование c использованием фреймворка Mocha - Automated testing with
   Mocha [](chapters/3-code-quality)
-- Полифилы - Polyfills and transpilers  [polyfills](chapters/3-code-quality/polyfills.md)
+- Полифилы - Polyfills and transpilers  [polyfills](chapters/3-code-quality/6-polyfills.md)
 
 ### Объекты: основы(Objects: the basics)
 
-- Объекты - Objects [object](chapters/4-object-basics/object.md) || [code](codes/4-object-basics/_2-object.ts)
-- Копирование объектов и ссылки - Object references and copying [object-copy](chapters/4-object-basics/object-copy.md)
-- Сборка мусора - Garbage collection [garbage-collection](chapters/4-object-basics/garbage-collection.md)
-- Методы объекта, "this" - Object methods, "this" [object-methods](chapters/4-object-basics/object-methods.md)
+- Объекты - Objects [object](chapters/4-object-basics/1-object.md) || [code](codes/4-object-basics/_2-object.ts)
+- Копирование объектов и ссылки - Object references and copying [object-copy](chapters/4-object-basics/2-object-copy.md)
+- Сборка мусора - Garbage collection [garbage-collection](chapters/4-object-basics/3-garbage-collection.md)
+- Методы объекта, "this" - Object methods, "this" [object-methods](chapters/4-object-basics/4-object-methods.md)
 - Конструктор, оператор "new" - Constructor, operator "
-  new" [constructor-new](chapters/4-object-basics/constructor-new.md)
+  new" [constructor-new](chapters/4-object-basics/5-constructor-new.md)
 - Опциональная цепочка '?.' - Optional chaining '?.' [object-basics](chapters/4-object-basics)
-- Тип данных Symbol - Symbol type [symbol](chapters/4-object-basics/symbol.md)
+- Тип данных Symbol - Symbol type [symbol](chapters/4-object-basics/7-symbol.md)
 - Преобразование объектов в примитивы - Object to primitive
-  conversion [object-toprimitive](chapters/4-object-basics/object-toprimitive.md)
+  conversion [object-toprimitive](chapters/4-object-basics/8-object-toprimitive.md)
 
 ### Типы данных(Data types)
 

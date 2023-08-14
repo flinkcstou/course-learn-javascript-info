@@ -36,3 +36,7 @@
 - структура данных - structure data
 - типы объектов - kinds of objects
 - Спецсимволы - Special characters
+- Деструктурирующее присваивание - Destructuring assignment
+- бенчмарками - benchmark
+- chain or responsibility pattern = цепочка обязанностей
+- FRP pattern - функциональное программирование pattern
