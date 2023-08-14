@@ -1,10 +1,15 @@
 - `extra task`
     - Нужно собрать воедино destructuring и остаточные параметры и оператор расширения
 
+- `resource`
+    - [rest-parameter-and-spread-operator](../chapters/6-advanced-functions/2-rest-parameters-spread-operator.md)
+    - [destructing](../chapters/5-data-types/10-destructuring-assignment.md)
+
 - деструктуризация(`Destructing`) работает с любым объектом(object) структурой данным(Structure data) у кого есть
   реализация `Iterable` или реализован метод `Symbol.iterator`
 - Array, String, Map, Set, WeakSet, custom structure data
-- `Destructing` также работает с обычным объектом(`object`). но вся реализация находится под капотом js и мы не имеем доступа чтоб
+- `Destructing` также работает с обычным объектом(`object`). но вся реализация находится под капотом js и мы не имеем
+  доступа чтоб
   что то поменять.
 
 ```js
@@ -42,4 +47,29 @@ for (let key of set) {
 let [one/*это нулевой индекс переменной*/, two/*это первый индекс переменной*/] = [arr[0], arr[1]]
 
 ```
+
+- Остаточный параметр(`rest parameter`) это специальная возможность где мы можем оставшиеся параметры записать в
+  отдельный `variable`
+- `rest parameter` берет оставшиеся значения
+- `rest parameter` работает внутри объекта(`object`)  внутри скобок(`curly braces`) либо внутри массива(`array`) внутри
+  скобок(`square brackets`)
+
+```js
+let [name1, name2, ...rest] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+
+rest.length // 2
+let {name, ...otherObj} = {name: 'sdfdsf', fullName: 'sdfdsf', secondName: 'sdfsfs'}
+Object.keys(otherObj).length // 2
+```
+
+- если запись идет в переменную, то это `rest parameter`. Если читают из переменной, то это `spread syntax`
+
+
+- `spread syntax`  грубо говоря делает следующее
+    - Первую очередь выражения с правой стороны для него вызывает `Symbol.iterator` где пробегаясь по `for of` заполняет
+      виртуальный массив `Array`
+    - дальше троеточие делает следующее для виртуального Array
+    - разлагает на значения. Это можно представить как много объявленных в значении через запятую без квадратных скобок.
+    - `spread syntax` можно сделать где объявляем аргументы в функции либо в квадратынз скобок это массив(Array) либо
+      фигурных скобок это обычный объект(object)
 
