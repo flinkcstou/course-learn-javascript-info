@@ -137,7 +137,8 @@
 
 ### Генераторы, продвинутая итерация
 
-- Генераторы - Generators
+- Генераторы - Generators [generators](chapters/12-generators-iterators/1-generators.md)
+  || [code](codes/12-generators-iterators/_1-generators.ts)
 - Асинхронные итераторы и генераторы - Async iteration and generators
 
 ### Модули(Modules)
