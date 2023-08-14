@@ -5,8 +5,29 @@ export class CounterJs {
     this.method1();
   }
 
-  method1() {
-    // 3-closure.md
+  method4() {
+    // https://learn.javascript.ru/closure#nezavisimy-li-schyotchiki
+    function makeCounter() {
+      let count = 0;
+
+      return function() {
+        return count++;
+      };
+    }
+
+    let counter = makeCounter();
+    let counter2 = makeCounter();
+
+    alert(counter()); // 0
+    alert(counter()); // 1
+
+    alert(counter2()); // ?
+    alert(counter2()); // ?
+  }
+
+  method3() {
+
+    // https://learn.javascript.ru/closure#obekt-schyotchika
     function Counter() {
       let count = 0;
 
@@ -30,7 +51,8 @@ export class CounterJs {
 
 
   method2() {
-    // function-object
+
+    // https://learn.javascript.ru/function-object lesson
     function makeCounter() {
       // вместо
       // let count = 0
@@ -49,8 +71,9 @@ export class CounterJs {
     console.error(counter()); // 1
   }
 
-  method3() {
-    // function-object task
+  method1() {
+    // https://learn.javascript.ru/function-object#ustanovka-i-umenshenie-znacheniya-schyotchika
+
     function makeCounter() {
       let count = 0;
 
